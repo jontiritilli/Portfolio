@@ -1,0 +1,1 @@
+Personal Portfolio consisting of contact info, personal history, link to download resume, and portfolio of projects and applications I've built
