@@ -653,6 +653,7 @@ video {
     padding: 0;
     float: left;
     height: auto;
+    width: 80%;
     -webkit-transition: all 200ms ease-in;
     -o-transition: all 200ms ease-in;
     -moz-transition: all 200ms ease-in;
@@ -3276,6 +3277,12 @@ textarea {
 .dev_icon img {
     width: 11%;
     margin: 2% 7% 2% 7%;
+    float: left;
+}
+
+.navbar-brand a img {
+    width: 40%;
+    height: auto;
     float: left;
 }
 
