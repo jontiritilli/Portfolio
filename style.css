@@ -32,7 +32,8 @@ Author:		elemis
 	22. FANCYBOX
 	23. DIVIDERS
 	24. FONT ICON PAGES	
-	25. RESPONSIVE	
+    25. RESPONSIVE	
+    26. ADDITIONAL STYLINGS (added by me)
 	
 	font-family: 'Libre Baskerville', serif;
 	font-family: 'Raleway', sans-serif;
@@ -3268,4 +3269,21 @@ textarea {
 	.classic-view figure.main {
 	    margin: -25px -25px 25px -25px
 	}
+}
+/*-----------------------------------------------------------------------------------*/
+/*	26. ADDITIONAL STYLING (added by me)
+/*-----------------------------------------------------------------------------------*/
+.dev_icon img {
+    width: 11%;
+    margin: 2% 7% 2% 7%;
+    float: left;
+}
+
+.services-1 hr {
+    padding: 0;
+    margin: 0;
+}
+
+.social li {
+    margin-right: 10%;
 }
