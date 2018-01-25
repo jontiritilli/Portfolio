@@ -3109,7 +3109,6 @@ textarea {
 	}
 	.navbar-header {
 	    float: left;
-	    width: 100%;
 	}
 	.navbar-header:after {
 	    content: '';
