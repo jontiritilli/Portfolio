@@ -3108,7 +3108,8 @@ textarea {
 	    margin: 22px 0;
 	}
 	.navbar-header {
-	    float: left;
+        float: left;
+        width: 100%;
 	}
 	.navbar-header:after {
 	    content: '';
@@ -3279,10 +3280,27 @@ textarea {
     float: left;
 }
 
-.navbar-brand a img {
-    width: 40%;
-    height: auto;
-    float: left;
+@media (min-width: 1271px){
+    .navbar-header {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media (max-width: 1270px){
+    .navbar-brand a img {
+        width: 35%;
+        height: auto;
+        float: left;
+    }
+}
+
+@media (min-width: 1271px){
+    .navbar-brand a img {  
+        width: 25%;
+        height: auto;
+        float: left;
+    }
 }
 
 .services-1 hr {
