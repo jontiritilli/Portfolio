@@ -3290,6 +3290,7 @@ textarea {
 @media (max-width: 1270px){
     .navbar-brand a img {
         width: 35%;
+        padding-top: 10px;
         height: auto;
         float: left;
     }
@@ -3310,4 +3311,8 @@ textarea {
 
 .social li {
     margin-right: 10%;
+}
+
+.profile_pic {
+    width: 75%;
 }
