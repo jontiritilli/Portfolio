@@ -3275,8 +3275,8 @@ textarea {
 /*	26. ADDITIONAL STYLING (added by me)
 /*-----------------------------------------------------------------------------------*/
 .dev_icon img {
-    width: 11%;
-    margin: 2% 7% 2% 7%;
+    width: 7%;
+    margin: 3% 6.5%;
     float: left;
 }
 
@@ -3289,9 +3289,7 @@ textarea {
 
 @media (max-width: 1270px){
     .navbar-brand a img {
-        width: 35%;
-        padding-top: 10px;
-        height: auto;
+        height: 35px;
         float: left;
     }
 }
