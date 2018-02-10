@@ -3290,6 +3290,7 @@ textarea {
 @media (max-width: 1270px){
     .navbar-brand a img {
         height: 35px;
+        width: auto;
         float: left;
     }
 }
