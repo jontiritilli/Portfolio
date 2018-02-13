@@ -3289,7 +3289,7 @@ textarea {
 
 @media (max-width: 1270px){
     .navbar-brand a img {
-        height: 35px;
+        height: 45px;
         width: auto;
         float: left;
     }
@@ -3297,7 +3297,7 @@ textarea {
 
 @media (min-width: 1271px){
     .navbar-brand a img {  
-        width: 25%;
+        width: 30%;
         height: auto;
         float: left;
     }
