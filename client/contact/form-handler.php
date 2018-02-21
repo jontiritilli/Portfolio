@@ -2,12 +2,12 @@
 include('SMTPClass.php');
 
 $use_smtp = '0';
-$emailto = 'jonathan@jonathantiritilli.com';
+$emailto = 'jonathantiritilli@gmail.com';
 
 	// retrieve from parameters
 	$emailfrom = isset($_POST["email"]) ? $_POST["email"] : "";
 	$nocomment = isset($_POST["nocomment"]) ? $_POST["nocomment"] : "";
-	$subject = 'Email from Lumos';
+	$subject = 'Email from Portfolio Website';
 	$message = '';
 	$response = '';
 	$response_fail = 'There was an error verifying your details.';
@@ -35,9 +35,9 @@ $emailto = 'jonathan@jonathantiritilli.com';
 		$response = sendEmail($subject, $message, $emailto, $emailfrom);
 			
 		} else {
-		
+	
 			$response = $response_fail;
-		
+	
 		}
 
 	echo $response;
