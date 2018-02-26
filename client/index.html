@@ -212,7 +212,7 @@
             <p>Fullerton, CA 92835<p>
           </div>
           <div class="col-md-4 col-sm-6"> <i class="budicon-mail"></i>
-            <p> <a class="nocolor" href="mailto:JonathanTiritilli@gmail.com">JonathanTiritilli@gmail.com</a>
+            <p> <a class="nocolor" href="mailto:JonTiritilli@gmail.com">JonathanTiritilli@gmail.com</a>
           </div>
           <div class="col-md-4 col-sm-6"> <i class="budicon-mobile"></i>
             <p><a class='nocolor' href="tel:951-282-7630">(951) 282-7630</a></p>
@@ -222,7 +222,7 @@
         <div class="divide30"></div>
         <div class="form-container">
           <div class="response alert alert-success"></div>
-          <form class="forms" action="contact/form-handler.php" method="post">
+          <form class="forms">
             <fieldset>
               <div class="row">
                 <div class="col-sm-6">
@@ -254,7 +254,7 @@
                 </div>
                 <div class="col-sm-6">
                   <div class="button-row pull-right">
-                    <input type="submit" value="Send Message" name="submit" class="btn btn-submit bm0" />
+                    <input type="submit" value="Send Message" name="submit" class="btn btn-submit bm0 sendMail" />
                   </div>
                 </div>
                 <div class="col-sm-6 lp5">
@@ -297,7 +297,28 @@
 <script src="style/js/jquery.themepunch.tools.min.js"></script> 
 <script src="style/js/classie.js"></script> 
 <script src="style/js/plugins.js"></script> 
-<script src="style/js/scripts.js"></script> 
+<script src="style/js/scripts.js"></script>
+<script>
+  $(document).ready(addHandlers)
+  function addHandlers(){
+    $('.sendMail').on('click', function(){
+      sendMail(event.target)
+    })
+  }
+  function sendMail(data){
+    $.ajax({
+      url: 'http://localhost:8300/send',
+      data: data,
+      method: 'post',
+      success: function(res){
+        console.log(res);
+      },
+      error: function(err){
+        console.log(err)
+      }
+    })
+  }
+</script>
 <script>
 	$.backstretch(["style/images/art/bg5.jpg"]);
 </script>
