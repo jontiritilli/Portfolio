@@ -3314,7 +3314,7 @@ textarea {
     }
 }
 
-@media (max-width: 1024x) {
+@media (max-width: 1024px) {
     .caption { 
         font-size: 26px !important;
         margin-bottom: 20px !important;
