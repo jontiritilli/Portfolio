@@ -3307,10 +3307,23 @@ textarea {
 .dev_icon img {
     width: 65%;
 }
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .dev_icon img {
         width: 75%;
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1024x) {
+    .caption { 
+        font-size: 26px !important;
+        margin-bottom: 20px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .small {
+        font-size: 14px !important;
     }
 }
 
