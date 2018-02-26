@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "master website version",
+  "main": "master_server.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon webserver.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jontiritilli/Portfolio.git"
+  },
+  "author": "Jonathan Tiritilli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jontiritilli/Portfolio/issues"
+  },
+  "homepage": "https://github.com/jontiritilli/Portfolio#readme"
+}
