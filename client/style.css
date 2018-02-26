@@ -3305,9 +3305,13 @@ textarea {
 /*	26. ADDITIONAL STYLING (added by me)
 /*-----------------------------------------------------------------------------------*/
 .dev_icon img {
-    width: 7%;
-    margin: 3% 6.5%;
-    float: left;
+    width: 65%;
+}
+@media (min-width: 768px){
+    .dev_icon img {
+        width: 75%;
+        margin-bottom: 20px;
+    }
 }
 
 @media (min-width: 1271px){
