@@ -619,13 +619,13 @@ d[0].offsetTop||15===d[0].offsetTop;d.remove();a.fixedPosition=e}f.extend(b.defa
 						
 						$(this).addClass('submit').after($loading.clone());
 						$('.defaultText',$form).dcDefaultText({action: 'remove'});
-						$.post(formAction, $(this).serialize(),function(data){
-							$('.loading').fadeOut().remove();
-							$('.response').html(data).fadeIn();
-							var x = horig + defaults.successH;
-							$('.boxes.masoned').animate({height: x+'px'},400);
-							$('fieldset',this).slideUp();
-						});
+						// $.post(formAction, $(this).serialize(),function(data){
+						// 	$('.loading').fadeOut().remove();
+						// 	$('.response').html(data).fadeIn();
+						// 	var x = horig + defaults.successH;
+						// 	$('.boxes.masoned').animate({height: x+'px'},400);
+						// 	$('fieldset',this).slideUp();
+						// });
 					} else {
 						$form.submit();
 					}
