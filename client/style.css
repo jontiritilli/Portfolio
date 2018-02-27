@@ -3215,7 +3215,7 @@ textarea {
 }
 @media (max-width: 991px) { 
 	[class*="col-"] {
-	    margin-bottom: 20px
+	    margin-bottom: 0
 	}
 	.grid-view [class*="col-"] .post {
 	    margin-bottom: 0
@@ -3236,7 +3236,7 @@ textarea {
 	    text-align: center;
 	}
 	.footer p {
-	    margin-bottom: 20px
+	    margin-bottom: 0px
 	}
 }
 @media (max-width: 767px) { 
@@ -3305,11 +3305,11 @@ textarea {
 /*	26. ADDITIONAL STYLING (added by me)
 /*-----------------------------------------------------------------------------------*/
 .dev_icon img {
-    width: 65%;
+    width: 50%;
 }
 @media (min-width: 768px) {
     .dev_icon img {
-        width: 75%;
+        width: 50%;
         margin-bottom: 20px;
     }
 }
@@ -3355,9 +3355,9 @@ textarea {
     margin: 0;
 }
 
-.social li {
-    margin-right: 10%;
-}
+/* .social li {
+    margin-right: 6%;
+} don't need right now*/
 
 .profile_pic {
     width: 75%;

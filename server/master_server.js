@@ -1,11 +1,15 @@
 const express = require('express');
 const path = require('path');
+const cors = require('cors');
 
 const PORT = process.env.port || 8300;
 
 const app = express();
 
 app.use(express.static(path.join(__dirname, '..', 'client')))
+app.use(cors());
+
+require('./mailer/node_mailer')(app)
 
 app.get('*', (req, res) => {
     res.sendFile(resolve(__dirname, '..', 'client', 'index.html'));

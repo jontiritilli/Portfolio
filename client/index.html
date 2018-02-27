@@ -173,29 +173,10 @@
         <h2 class="section-title pull-left">Things I've Made</h2>
         <!-- /#filters-container -->
         <div class="clearfix"></div>
-        <div id="grid-container" class="cbp-l-grid-masonry">
-          <ul>
-            <li class="cbp-item frame architecture"> 
-              <a class="cbp-caption cbp-singlePage" href="">
-                <div class="cbp-caption-defaultWrap"> 
-                  <img class='rounded' src="style/images/art/memory_match.jpg" alt=""> 
-                </div>
-                <div class="cbp-caption-activeWrap">
-                  <div class="cbp-l-caption-alignCenter">
-                    <div class="cbp-l-caption-body">
-                      <div class="cbp-l-caption-title">
-                        <p>Pokemon Memory Match</p>
-                        <br>
-                        <p><a href="./memory_match/index.html">live</a></p>
-                        <br>
-                        <!-- <a href="https://github.com/jontiritilli/memory_match">git</a>   -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a> 
-            </li>
-          </ul>
+        <div class="row">
+          <div class="col-xs-12 col-md-4"></div>
+          <div class="col-xs-12 col-md-4"></div>
+          <div class="col-xs-12 col-md-4"></div>
         </div>
       </div>
       <!-- /.box --> 
@@ -208,21 +189,24 @@
         <p>I am readily available by email, phone, and text. I welcome inqiuries about my past and current work, and I am always looking to network. Please feel free to get in touch by any of the listed methods.</p>
         <div class="divide20"></div>
         <div class="row text-center services-2">
-          <div class="col-md-4 col-sm-6"> <i class="budicon-map"></i>
-            <p>Fullerton, CA 92835<p>
+          <div class="col-xs-6 col-md-3"> <i class="icon-map"></i>
+            <p><a class="nocolor" target='_blank' href="https://www.google.com/maps/place/Fullerton,+CA/@33.8893864,-117.9595816,13z/data=!3m1!4b1!4m5!3m4!1s0x80dd2a74c381cb63:0xf59c53811e60ea4a!8m2!3d33.8703645!4d-117.9242123">Where Am I?</a>
           </div>
-          <div class="col-md-4 col-sm-6"> <i class="budicon-mail"></i>
-            <p> <a class="nocolor" href="mailto:JonathanTiritilli@gmail.com">JonathanTiritilli@gmail.com</a>
+          <div class="col-xs-6 col-md-3"> <i class="icon-mail"></i>
+            <p><a class="nocolor" href="mailto:JonTiritilli@gmail.com">Email Me</a>
           </div>
-          <div class="col-md-4 col-sm-6"> <i class="budicon-mobile"></i>
-            <p><a class='nocolor' href="tel:951-282-7630">(951) 282-7630</a></p>
+          <div class="col-xs-6 col-md-3"> <i class="icon-mobile"></i>
+            <p><a class='nocolor' href="tel:951-282-7630">Call Me</a></p>
+          </div>
+          <div class="col-xs-6 col-md-3"> <i class="icon-comment"></i>
+            <p><a class='nocolor' href="sms:951-282-7630">Text Me</a></p>
           </div>
         </div>
         <!-- /.services-2 -->
         <div class="divide30"></div>
         <div class="form-container">
           <div class="response alert alert-success"></div>
-          <form class="forms" action="contact/form-handler.php" method="post">
+          <form class="forms">
             <fieldset>
               <div class="row">
                 <div class="col-sm-6">
@@ -254,7 +238,7 @@
                 </div>
                 <div class="col-sm-6">
                   <div class="button-row pull-right">
-                    <input type="submit" value="Send Message" name="submit" class="btn btn-submit bm0" />
+                    <input type="submit" value="Send Message" name="submit" class="btn btn-submit bm0 sendMail" />
                   </div>
                 </div>
                 <div class="col-sm-6 lp5">
@@ -275,16 +259,28 @@
     </section>
     <!-- /#contact -->
     
-    <footer class="footer box">
-      <!-- <p class="pull-left">© 2015 Lumos. All rights reserved. Theme by <a href="http://elemisfreebies.com">elemis</a>.</p> -->
-      <p class='pull-right'>2018 Jonathan Tiritilli. All rights reserved.</p>
-      <ul class="social">
-        <li><a href="https://github.com/jontiritilli" target='_blank'><i class="icon-s-github"></i></a></li>
-        <li><a href="https://www.facebook.com/jontiritilli" target='_blank'><i class="icon-s-facebook"></i></a></li>
-        <li><a href="https://www.instagram.com/jontiritilli/" target='_blank'><i class="icon-s-instagram"></i></a></li>
-        <li><a href="https://www.twitter.com/JonTiritilli" target='_blank'><i class="icon-s-twitter"></i></a></li>
-      </ul>
-      <div class="clearfix"></div>
+    <footer class="footer box text-center">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <div class="row">
+            <div class="col-xs-3">
+              <a href="https://github.com/jontiritilli" target='_blank'><i class="icon-s-github"></i></a>
+            </div>
+            <div class="col-xs-3">
+              <a href="https://www.facebook.com/jontiritilli" target='_blank'><i class="icon-s-facebook"></i></a>
+            </div>
+            <div class="col-xs-3">
+              <a href="https://www.instagram.com/jontiritilli/" target='_blank'><i class="icon-s-instagram"></i></a>
+            </div>
+            <div class="col-xs-3">
+              <a href="https://www.twitter.com/JonTiritilli" target='_blank'><i class="icon-s-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <p>2018 Jonathan Tiritilli. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
     <!-- /footer --> 
     
@@ -297,7 +293,28 @@
 <script src="style/js/jquery.themepunch.tools.min.js"></script> 
 <script src="style/js/classie.js"></script> 
 <script src="style/js/plugins.js"></script> 
-<script src="style/js/scripts.js"></script> 
+<script src="style/js/scripts.js"></script>
+<!-- <script>
+  $(document).ready(addHandlers)
+  function addHandlers(){
+    $('.sendMail').on('click', function(){
+      sendMail(event.target)
+    })
+  }
+  function sendMail(data){
+    $.ajax({
+      url: 'http://localhost:8300/send',
+      data: data,
+      method: 'post',
+      success: function(res){
+        console.log(res);
+      },
+      error: function(err){
+        console.log(err)
+      }
+    })
+  }
+</script> -->
 <script>
 	$.backstretch(["style/images/art/bg5.jpg"]);
 </script>

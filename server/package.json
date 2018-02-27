@@ -4,7 +4,9 @@
   "description": "master website version",
   "main": "master_server.js",
   "dependencies": {
+    "cors": "^2.8.4",
     "express": "^4.16.2",
+    "nodemailer": "^4.6.0",
     "path": "^0.12.7"
   },
   "devDependencies": {},
