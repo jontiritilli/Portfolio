@@ -4,10 +4,11 @@
   "description": "master website version",
   "main": "master_server.js",
   "dependencies": {
+    "compression": "^1.7.2",
     "cors": "^2.8.4",
     "express": "^4.16.2",
-    "nodemailer": "^4.6.0",
-    "path": "^0.12.7"
+    "express-minify": "^1.0.0",
+    "nodemailer": "^4.6.0"
   },
   "devDependencies": {},
   "scripts": {
