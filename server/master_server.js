@@ -3,6 +3,7 @@ const path = require('path');
 const cors = require('cors');
 const minify = require('express-minify');
 var compression = require('compression');
+const bodyParser = require('body-parser');
 
 const PORT = process.env.port || 8300;
 
@@ -11,6 +12,9 @@ const app = express();
 app.use(cors());
 app.use(compression());
 app.use(minify());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
+
 app.use(express.static(path.join(__dirname, '..', 'client')))
 
 require('./mailer/node_mailer')(app)

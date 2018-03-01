@@ -1,13 +1,11 @@
 const nodemailer = require('nodemailer');
 const credentials = require('./config');
+const validator = require('validator');
 
-module.exports = function (app, path) {
+module.exports = function (app) {
     app.post('/send', (req, res) => {
-        const output = `Test Email`
-        console.log(req);
-
+        console.log('this is the request', req)
         nodemailer.createTestAccount((err, account) => {
-
             let transporter = nodemailer.createTransport({
                 host: 'smtp.gmail.com',
                 port: 587,
@@ -19,20 +17,18 @@ module.exports = function (app, path) {
             });
 
             let mailOptions = {
-                from: 'Portfolio',
-                to: 'jontiritilli@gmail.com',
-                subject: 'Your Dateplan has been setup',
-                html: output
+                from: req.body.name,
+                to: credentials.destination,
+                replyTo: req.body.email,
+                subject: req.body.subject,
+                text: req.body.message
             };
 
             transporter.sendMail(mailOptions, (error, info) => {
                 if (error) {
-                    return console.log(error);
+                    res.send(error);
                 }
-                console.log('Message sent: %s', info.messageId);
-                console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-
-                res.send('email sent!')
+                res.send('success');
             });
         });
     })
