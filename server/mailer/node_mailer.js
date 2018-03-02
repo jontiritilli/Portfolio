@@ -15,12 +15,13 @@ module.exports = function (app) {
                 }
             });
 
+            let output = `${req.body.name}, <br> ${req.body.message}`
+            
             let mailOptions = {
-                from: req.body.name,
                 to: credentials.destination,
                 replyTo: req.body.email,
                 subject: req.body.subject,
-                text: req.body.message
+                html: output
             };
 
             transporter.sendMail(mailOptions, (error, info) => {
