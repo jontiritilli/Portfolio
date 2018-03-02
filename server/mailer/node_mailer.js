@@ -4,7 +4,6 @@ const validator = require('validator');
 
 module.exports = function (app) {
     app.post('/send', (req, res) => {
-        console.log('this is the request', req)
         nodemailer.createTestAccount((err, account) => {
             let transporter = nodemailer.createTransport({
                 host: 'smtp.gmail.com',
