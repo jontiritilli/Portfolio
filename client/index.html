@@ -12,15 +12,15 @@
   <link rel="stylesheet" href="/css/fontawesome-all.min.css">
   <link rel="icon" href="assets/images/favicon.png">
 </head>
-<body>
+<body class='grey lighten-3'>
   <nav>
-    <div class="nav-wrapper grey lighten-2">
-      <a href="#!" class="brand-logo"><img class='responsive-img' src="assets/images/logo-small.png" alt="Logo"></a>
+    <div class="nav-wrapper brown lighten-3">
+      <a href="/" class="brand-logo logo"><img class='responsive-img' src="assets/images/logo-small.png" alt="Logo"></a>
       <a href="#" data-activates="nav" class="button-collapse">
         <i class="material-icons">menu</i>
       </a>
-      <ul class="right hide-on-med-and-down">
-        <li class='menu'>
+      <ul class="right hide-on-med-and-down menu">
+        <li>
           <a id="#about">About</a>
         </li>
         <li>
@@ -35,16 +35,16 @@
       </ul>
       <ul class="menu side-nav" id="nav">
         <li>
-          <a id="#about">About</a>
+          <a id="#about" class='brown-text'><i class="material-icons">person</i>About</a>
         </li>
         <li>
-          <a id="#porfolio">Portfolio</a>
+          <a id="#porfolio" class='brown-text'><i class="material-icons">list</i>Portfolio</a>
         </li>
         <li>
-          <a id="#contact">Contact</a>
+          <a id="#contact" class='brown-text'><i class="material-icons">perm_contact_calendar</i>Contact</a>
         </li>
         <li>
-          <a href='googleresume'>Resume</A>
+          <a href='googleresume' class='brown-text'><i class="material-icons">open_in_browser</i>Resume</A>
         </li>
       </ul>
     </a>
@@ -58,21 +58,15 @@
         <div class="row center">
           <h5 class="header col s12 light">Web Developer</h5>
         </div>
-        <!-- <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-        </div> -->
         <br><br>
 
       </div>
     </div>
-    <div class="parallax"><img src="assets/images/background1.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="assets/images/background1.jpeg" alt="Unsplashed background img 1"></div>
   </div>
-
 
   <div class="container" id="about">
     <div class="section">
-
-      <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
@@ -107,150 +101,192 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 
+  <div class="parallax-container valign-wrapper" id='two'>
+    <div class="section no-pad-bot">
+    </div>
+    <div class="parallax">
+      <img src="assets/images/background2.jpeg" alt="Unsplashed background img 2">
+    </div>
+  </div>
 
-  <div class="parallax-container" id='about'>
-      <div class="container">
-        <div class="row">
-            <div class="carousel">
-              <a class="carousel-item" href="#one!">
-                <img src="assets/images/devicons/javascript.svg">
-              </a>
-              <a class="carousel-item" href="#two!">
-                <img src="assets/images/devicons/jquery.svg">
-              </a>
-              <a class="carousel-item" href="#two!">
-                <img src="assets/images/devicons/nodejs.svg">
-              </a>
-              <a class="carousel-item" href="#two!">
-                <img src="assets/images/devicons/express.svg">
-              </a>
-              <a class="carousel-item" href="#two!">
-                <img src="assets/images/devicons/github.svg">
-              </a>
-              <a class="carousel-item" href="#two!">
-                <img src="assets/images/devicons/git.svg">
-              </a>
-              <a class="carousel-item" href="#two!">
-                <img src="assets/images/devicons/aws.svg">
-              </a>
-              <a class="carousel-item" href="#two!">
-                <img src="assets/images/devicons/apache.svg">
-              </a>
-              <a class="carousel-item" href="#three!">
-                <img src="assets/images/devicons/NPM.svg">
-              </a>
-              <a class="carousel-item" href="#four!">
-                <img src="assets/images/devicons/mongoDB.svg">
-              </a>
-              <a class="carousel-item" href="#two!">
-                <img src="assets/images/devicons/mysql.svg">
-              </a>
-              <a class="carousel-item" href="#five!">
-                <img src="assets/images/devicons/html5.svg">
-              </a>
-              <a class="carousel-item" href="#two!">
-                <img src="assets/images/devicons/css3.svg">
-              </a>
-            </div>
+  <div class="container" id='portfolio'>
+    <div class="row">
+      <div class="col s12 center-align">
+        <div class="icon-block">
+          <h2 class="center brown-text">
+            <i class="material-icons">view_carousel</i>
+          </h2>
+          <h5 class="center">Portfolio</h5>
+        </div>
       </div>
     </div>
-    <div class="parallax"><img src="assets/images/background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="row">
+      <div class="col s12 m4">
+        <!-- <img src="assets/images/calculator.png" alt="" class='responsive-img'>
+        <div class="col s6 center"><a href="">GitHub</a></div>
+        <div class="col s6 center"><a href="">Live</a></div> -->
+      </div>
+      <div class="col s12 m4">
+        <h5 class='center'>Calculator</h5>
+        <img src="assets/images/calculator.png" alt="" class='responsive-img'>
+        <div class="col s6 center"><a href="">GitHub</a></div>
+        <div class="col s6 center"><a href="">Live</a></div>
+      </div>
+      <div class="col s12 m4">
+        <!-- <img src="assets/images/calculator.png" alt="" class='responsive-img'>
+        <div class="col s6 center"><a href="">GitHub</a></div>
+        <div class="col s6 center"><a href="">Live</a></div> -->
+      </div>
+    </div>
   </div>
+
+  <div class="parallax-container valign-wrapper" id='three'>
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Design, Build, Destroy, Rebuild</h5>
+        </div>
+      </div>
+      <div class="parallax">
+        <img src="assets/images/background3.jpeg" alt="Unsplashed background img 3">
+      </div>
+    </div>
+  </div>  
+
 
   <div class="container" id='contact'>
     <div class="section">
       <div class="row">
-        <div class="col s12 center">
-          <h3>
-            <i class="mdi-content-send brown-text"></i>
-          </h3>
-          <h4>Reach Out</h4>
-          <div class="row">
-            <div class="col s6 col m3 center-align">
-              <a class="black-text" target='_blank' rel="noopener noreferrer" href="https://www.google.com/maps/place/Fullerton,+CA/@33.8893864,-117.9595816,13z/data=!3m1!4b1!4m5!3m4!1s0x80dd2a74c381cb63:0xf59c53811e60ea4a!8m2!3d33.8703645!4d-117.9242123">
-                <p>Where Am I?</p>
-                <i class="material-icons">map</i>
-              </a>
-            </div>
-            
-            <div class="col s6 col m3 center-align">
-              <a class="black-text" href="mailto:JonTiritilli@gmail.com">
-                <p>Email Me</p>
-                <i class="material-icons">email</i>
-              </a>
-            </div>
-            
-            <div class="col s6 col m3 center-align">
-              <a class='black-text' href="tel:951-282-7630">
-                <p>Call Me</p>
-                <i class="material-icons">phone_iphone</i>
-              </a>
-            </div>
-            
-            <div class="col s6 col m3 center-align">
-              <a class="black-text" href="sms:951-282-7630">
-                <p>Text Me</p>
-                <i class="material-icons">mode_comment</i>
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <form class="col s12">
-              <div class="row">
-                <div class="input-field col s6">
-                  <input id="first_name" type="text" class="validate">
-                  <label for="first_name">Name</label>
-                </div>
-                <div class="input-field col s6">
-                  <input id="email" type="email" class="validate">
-                  <label for="email">Email</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <textarea id="textarea1" class="materialize-textarea"></textarea>
-                  <label for="textarea1">Message</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col s12">
-                  <button class='btn teal'><i class="material-icons">send</i>Send</button>
-                </div>
-              </div>
-            </form>
+        <div class="col s12 center-align">
+          <div class="icon-block">
+            <h2 class="center brown-text">
+              <i class="material-icons">contacts</i>
+            </h2>
+            <h5 class="center">Contact Me</h5>
           </div>
         </div>
       </div>
-
+      <div class="row">
+        <div class="col s6 col m3 center-align">
+          <a class="brown-text" target='_blank' rel="noopener noreferrer" href="https://www.google.com/maps/place/Fullerton,+CA/@33.8893864,-117.9595816,13z/data=!3m1!4b1!4m5!3m4!1s0x80dd2a74c381cb63:0xf59c53811e60ea4a!8m2!3d33.8703645!4d-117.9242123">
+            <p>Where Am I?</p>
+            <i class="material-icons">map</i>
+          </a>
+        </div>
+        
+        <div class="col s6 col m3 center-align">
+          <a class="brown-text" href="mailto:JonTiritilli@gmail.com">
+            <p>Email Me</p>
+            <i class="material-icons">email</i>
+          </a>
+        </div>
+        
+        <div class="col s6 col m3 center-align">
+          <a class='brown-text' href="tel:951-282-7630">
+            <p>Call Me</p>
+            <i class="material-icons">phone_iphone</i>
+          </a>
+        </div>
+        
+        <div class="col s6 col m3 center-align">
+          <a class="brown-text" href="sms:951-282-7630">
+            <p>Text Me</p>
+            <i class="material-icons">mode_comment</i>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <form class="col s12 contactForm">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="name" type="text" class="validate">
+              <label for="name">Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="message" class="materialize-textarea"></textarea>
+              <label for="message">Message</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 center">
+              <button class='btn teal sendBtn'><i class="material-icons">send</i>Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-
-
-  <div class="parallax-container valign-wrapper" id='four'>
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+    
+  <div class="parallax-container" id='devicons'>
+    <div class="container">
+      <div class="row">
+        <div class="carousel">
+          <a class="carousel-item" href="#one!">
+            <img src="assets/images/devicons/javascript.svg">
+          </a>
+          <a class="carousel-item" href="#two!">
+            <img src="assets/images/devicons/jquery.svg">
+          </a>
+          <a class="carousel-item" href="#three!">
+            <img src="assets/images/devicons/nodejs.svg">
+          </a>
+          <a class="carousel-item" href="#four!">
+            <img src="assets/images/devicons/express.svg">
+          </a>
+          <a class="carousel-item" href="#five!">
+            <img src="assets/images/devicons/github.svg">
+          </a>
+          <a class="carousel-item" href="#six!">
+            <img src="assets/images/devicons/git.svg">
+          </a>
+          <a class="carousel-item" href="#seven!">
+            <img src="assets/images/devicons/aws.svg">
+          </a>
+          <a class="carousel-item" href="#eight!">
+            <img src="assets/images/devicons/apache.svg">
+          </a>
+          <a class="carousel-item" href="#nine!">
+            <img src="assets/images/devicons/NPM.svg">
+          </a>
+          <a class="carousel-item" href="#ten!">
+            <img src="assets/images/devicons/mongoDB.svg">
+          </a>
+          <a class="carousel-item" href="#eleven!">
+            <img src="assets/images/devicons/mysql.svg">
+          </a>
+          <a class="carousel-item" href="#twelve!">
+            <img src="assets/images/devicons/html5.svg">
+          </a>
+          <a class="carousel-item" href="#thirteen!">
+            <img src="assets/images/devicons/css3.svg">
+          </a>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="assets/images/background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax">
+      <img src="assets/images/background4.jpeg" alt="Unsplashed background img 4">
+    </div>
   </div>
 
-  <footer class="page-footer red">
+  <footer class="page-footer brown lighten-3">
     <div class="container">
       <div class="row">
         <div class="col s12">
           <h5 class="white-text">Elsewhere</h5>
           <div class="row">
-            <div class="col s1 center-align"><a class="white-text" href="#!"><i class='fab fa-github-alt'></i></a></div>
-            <div class="col s1 center-align"><a class="white-text" href="#!"><i class='fab fa-twitter'></i></a></div>
-            <div class="col s1 center-align"><a class="white-text" href="#!"><i class='fab fa-facebook-f'></i></a></div>
-            <div class="col s1 center-align"><a class="white-text" href="#!"><i class='fab fa-github-alt'></i></a></div>
+            <div class="col s1 center-align"><a class="white-text" href="https://github.com/jontiritilli"><i class='fab fa-github-alt'></i></a></div>
+            <div class="col s1 center-align"><a class="white-text" href="https://www.twitter.com/JonTiritilli"><i class='fab fa-twitter'></i></a></div>
+            <div class="col s1 center-align"><a class="white-text" href="https://www.facebook.com/jontiritilli"><i class='fab fa-facebook-f'></i></a></div>
+            <div class="col s1 center-align"><a class="white-text" href="https://www.instagram.com/jontiritilli"><i class='fab fa-instagram'></i></a></div>
             <div class="col s8 right-align">Author: Jonathan Tiritilli</div>
           </div>
         </div>

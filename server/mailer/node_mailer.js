@@ -20,7 +20,6 @@ module.exports = function (app) {
             let mailOptions = {
                 to: credentials.destination,
                 replyTo: req.body.email,
-                subject: req.body.subject,
                 html: output
             };
 
