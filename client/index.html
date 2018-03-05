@@ -1,417 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Jonathan Tiritilli Web Developer Portfolio">
-<meta name='keyword' content='web developer, javascript, es6, es5, jquery, react, react.js, reactJS, redux, redux.js, reduxJS, node, node.js, express, html, html5, css, css3, bootstrap, materialize, design, ui/ux'>
-<meta name="author" content="Jonathan Tiritilli">
-<link rel="shortcut icon" href="style/images/favicon.png">
-<title>Tiritilli</title>
-<!-- Bootstrap core CSS -->
-<link href="style/css/bootstrap.min.css" rel="stylesheet">
-<link href="style/css/plugins.css" rel="stylesheet">
-<link href="style.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Raleway:400,800,700,600,500,300' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-<link href="style/type/fontello.css" rel="stylesheet">
-<link href="style/type/budicons.css" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Tiritilli</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="/css/fontawesome-all.min.css">
+  <link rel="icon" href="assets/images/favicon.png">
 </head>
-<body class="full-layout">
-<div id="preloader"><div id="status"><div class="spinner"></div></div></div>
-<div class="body-wrapper">
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="navbar-header"> <a class="btn responsive-menu" data-toggle="collapse" data-target=".navbar-collapse"><i></i></a>
-      <div class="navbar-brand text-center"> <a href="index.html"><img src="style/images/logo-small.png" alt="" data-src="style/images/logo-small.png" data-ret="style/images/logo-small.png" class="retina" /></a> </div>
-      <!-- /.navbar-brand --> 
-    </div>
-    <!-- /.navbar-header -->
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li class="current"><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#elsewhere" class="fancybox-inline" data-fancybox-width="325" data-fancybox-height="220"><i class="icon-external-link"></i><span>Elsewhere</span></a></li>
+<body>
+  <nav>
+    <div class="nav-wrapper grey lighten-2">
+      <a href="#!" class="brand-logo"><img class='responsive-img' src="assets/images/logo-small.png" alt="Logo"></a>
+      <a href="#" data-activates="nav" class="button-collapse">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li class='menu'>
+          <a id="#about">About</a>
+        </li>
+        <li>
+          <a id="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a id="#contact">Contact</a>
+        </li>
+        <li>
+          <a href='googleresume'>Resume</A>
+        </li>
       </ul>
-      <!-- /.navbar-nav --> 
-    </div>
-    <!-- /.navbar-collapse -->
-    <div id="elsewhere" style="display:none;">
-      <h1>See Me, Elsewhere</h1>
-      <div class="divide20"></div>
-      <ul class="social">
-        <li><a href="https://github.com/jontiritilli" target='_blank' rel="noopener noreferrer"><i class="icon-s-github"></i></a></li>
-        <li><a href="https://www.facebook.com/jontiritilli" target='_blank' rel="noopener noreferrer"><i class="icon-s-facebook"></i></a></li>
-        <li><a href="https://www.instagram.com/jontiritilli/" target='_blank' rel="noopener noreferrer"><i class="icon-s-instagram"></i></a></li>
-        <li><a href="https://www.twitter.com/JonTiritilli" target='_blank' rel="noopener noreferrer"><i class="icon-s-twitter"></i></a></li>
+      <ul class="menu side-nav" id="nav">
+        <li>
+          <a id="#about">About</a>
+        </li>
+        <li>
+          <a id="#porfolio">Portfolio</a>
+        </li>
+        <li>
+          <a id="#contact">Contact</a>
+        </li>
+        <li>
+          <a href='googleresume'>Resume</A>
+        </li>
       </ul>
-    </div>
-    <!-- /#elsewhere --> 
+    </a>
   </nav>
-  <!-- /.navbar -->
-  
-  <section id="home" class="naked">
-    <div class="fullscreenbanner-container revolution">
-      <div class="fullscreenbanner">
-        <ul>
-          <li data-transition="fade"> <img src="style/images/dummy.png"  alt="slidebg1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="repeat">
-            <h1 class="tp-caption caption large sfb" data-x="center" data-y="center" data-voffset="-25" data-speed="900" data-start="1000" data-endspeed="100" data-easing="Sine.easeOut">Jonathan Tiritilli</h1>
-            <div class="tp-caption small tp-fade fadeout tp-resizeme" data-x="center" data-y="center" data-voffset="25" data-speed="100"
-			data-start="1500"
-			data-easing="Power4.easeOut"
-			data-splitin="chars"
-			data-splitout="chars"
-			data-elementdelay="0.03"
-			data-endelementdelay="0"
-			data-endspeed="100"
-			data-endeasing="Power1.easeOut"
-			style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">Specializing in Server-Side Web Development</div>
-            <div class="arrow smooth"><a href="#about"><i class="icon-down-open-big"></i></a></div>
-          </li>
-        </ul>
-        <div class="tp-bannertimer"></div>
+
+  <div id="index-banner" class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Jonathan Tiritilli</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Web Developer</h5>
+        </div>
+        <!-- <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+        </div> -->
+        <br><br>
+
       </div>
-      <!-- /.fullscreenbanner --> 
     </div>
-    <!-- /.revolution --> 
-  </section>
-  <!-- /#home -->
-  <section id="about" class='container-fluid'>
-    <div class="box">
-      <h2 class="section-title">Me, and The Things About Me</h2>
-      <div class="row">
-        <div class="col-md-5 col-md-push-7 col-sm-12">
-          <figure class="frame text-center">
-            <img class='profile_pic' src="style/images/me_img.gif" alt="" />
-          </figure>
-        </div>
-        <!-- /column -->
-        <div class="col-md-7 col-md-pull-5 col-sm-12">​  
-          <p class="lead">My name is Jonathan Tiritilli. I am a web developer focused on server-side web technologies and database/server maintenance.</p>
-          <p> Some of the languages I find myself coding frequently in are JavaScript (ES6, jQuery, NodeJS), MYSQL, HTML5, and CSS3. In addition, I am versed in many libraries and frameworks including Bootstrap, and Materialize, with experience in React as well.</p>
-          <p>I am comfortable deploying and maintaining full websites with all underlying technologies. This includes creating and implementing Node and Apache/Nginx servers in conjunction Amazon Web Services, as well as implementing and maintaining SQL and NoSQL databases.</p>
-        </div>
-        <!-- /column -->
-      </div>
-      <!-- /.row -->
-      <div class="clearfix"></div>
-      <div class="divide40"></div>
-      <h2 class="section-title">My Experience</h2>
-      <div class="divide10"></div>
-      <div class="services-1">
-        <div class="row">
-          <div class='dev_icon col-xs-4 col-sm-3 col-md-2 col-md-offset-1 text-center'>
-            <img src="style/images/devicons/javascript.svg"></img>
-          </div>
-          <div class='dev_icon col-xs-4 col-sm-3 col-md-2 text-center'>
-            <img src="style/images/devicons/jquery.svg"></img>
-          </div>
-          <div class='dev_icon col-xs-4 col-sm-3 col-md-2 text-center'>
-            <img src="style/images/devicons/mysql.svg"></img>
-          </div>
-            <div class='dev_icon col-xs-4 col-sm-3 col-md-2 text-center'>
-              <img src="style/images/devicons/nodejs.svg"></img>
-            </div>
-          <div class='dev_icon col-xs-4 col-sm-3 col-md-2 text-center'>
-            <img src="style/images/devicons/apache.svg"></img>
-          </div>
-          <div class='dev_icon col-xs-4 col-sm-3 col-md-2 col-md-offset-1 text-center'>
-            <img src="style/images/devicons/html5.svg"></img>
-          </div>
-          <div class='dev_icon col-xs-4 col-sm-3 col-md-2 text-center'>
-            <img src="style/images/devicons/css3.svg"></img>
-          </div>
-          <div class='dev_icon col-xs-4 col-sm-3 col-md-2 text-center'>
-            <img src="style/images/devicons/bootstrap.svg"></img>
-          </div>
-          <div class='dev_icon col-xs-4 col-sm-3 col-md-2 text-center'>
-            <img src="style/images/devicons/github.svg"></img>
-          </div>
-          <div class='dev_icon col-xs-4 col-sm-3 col-md-2 text-center'>
-            <img src="style/images/devicons/git.svg"></img>
-          </div>
-          <div class='dev_icon col-xs-4 col-sm-3 col-md-2 col-md-offset-1 text-center'>
-            <img src="style/images/devicons/aws.svg"></img>
-          </div>
-          <div class='dev_icon col-xs-4 col-sm-3 col-md-2 text-center'>
-            <img src="style/images/devicons/apache.svg"></img>
-          </div>
-          <div class='dev_icon col-xs-4 col-sm-3 col-md-2 text-center'>
-            <img src="style/images/devicons/chrome.svg"></img>
-          </div>
-          <div class='dev_icon col-xs-4 col-sm-3 col-md-2 text-center'>
-            <img src="style/images/devicons/php.svg"></img>
-          </div>
-          <div class='dev_icon col-xs-4 col-sm-3 col-md-2 text-center'>
-            <img src="style/images/devicons/visualstudio.svg"></img>
-          </div>
-          <div class='dev_icon col-xs-4 col-sm-3 col-md-2 col-md-offset-1 text-center'>
-            <img src="style/images/devicons/nginx.svg"></img>
-          </div>
-          <div class='dev_icon col-xs-4 col-sm-3 col-md-2 text-center'>
-            <img src="style/images/devicons/mongoDB.svg"></img>
-          </div>
-          <div class='dev_icon col-xs-4 col-sm-3 col-md-2 text-center'>
-            <img src="style/images/devicons/NPM.svg"></img>
-          </div>
-      </div>    
-    </div>
-    <!-- /.box -->
-  </section>
-  <!-- /#about -->
-  <div class="container-fluid">
-    <section id="portfolio" class="portfolio">
-      <div class="box">
-        <h2 class="section-title pull-left">Things I've Made</h2>
-        <!-- /#filters-container -->
-        <div class="clearfix"></div><div class="row">
-          <div class="col-xs-12 col-md-4 text-center">
-          </div>
-          <div class="col-xs-12 col-md-4 text-center">
-            <div class="row">
-              <div class="col-xs-4"></div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-4 text-center">
-            <div class="row">
-              <div class="col-xs-4"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-md-4 text-center">
-            <div class="row">
-              <div class="col-xs-12 text-center">Calculator</div>
-            </div>
-            <div class="col-xs-12 text-center">
-              <img src="./style/images/calculator_screenshot.png" alt="calculator">
-            </div>
-            <div class="col-xs-6"><a class='pull-right' href="http://calculator.jonathantiritilli.com" target='_blank' rel='noopener noreferrer'>Live</a></div>
-            <div class="col-xs-6"><a class='pull-left' href="https://github.com/jontiritilli/calc" target='_blank' rel='noopener noreferrer'>GitHub</a></div>
-          </div>
-
-          <div class="col-xs-12 col-md-4 text-center">
-            <div class="row">
-              <div class="col-xs-12 text-center">Coming Soon</div>
-            </div>
-            <div class="col-xs-12 text-center">
-              <img src="./style/images/under-construction.gif" alt="under construction">
-            </div>
-            <div class="col-xs-6">
-              <!-- <a href="http://calculator.jonathantiritilli.com">Live</a> -->
-            </div>
-            <div class="col-xs-6">
-              <!-- <a href="https://github.com/jontiritilli/calc">GitHub</a> -->
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-4 text-center"></div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-md-4 text-center">
-          </div>
-          <div class="col-xs-12 col-md-4 text-center">
-            <div class="row">
-              <div class="col-xs-6"></div>
-              <div class="col-xs-6"></div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-4 text-center">
-            <div class="row">
-              <div class="col-xs-6"></div>
-              <div class="col-xs-6"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /.box --> 
-    </section>
-    <!-- /#portfolio -->
-
-    <section id="contact">
-      <div class="box">
-        <h2 class="section-title">Reach Out</h2>
-        <p>I am readily available by email, phone, and text. I welcome inquiries about my past and current work, and I am always looking to network. Please feel free to get in touch by any of the listed methods.</p>
-        <div class="divide20"></div>
-        <div class="row text-center services-2">
-
-          <div class="col-xs-6 col-md-3">
-            <a class="nocolor" target='_blank' rel="noopener noreferrer" href="https://www.google.com/maps/place/Fullerton,+CA/@33.8893864,-117.9595816,13z/data=!3m1!4b1!4m5!3m4!1s0x80dd2a74c381cb63:0xf59c53811e60ea4a!8m2!3d33.8703645!4d-117.9242123">
-              <i class="icon-map" style='color:grey'></i>
-              <p>Where Am I?
-            </a>
-          </div>
-
-          <div class="col-xs-6 col-md-3">
-            <a class="nocolor" href="mailto:JonTiritilli@gmail.com">
-              <i class="icon-mail" style='color:grey'></i>
-              <p>Email Me
-            </a>
-          </div>
-
-          <div class="col-xs-6 col-md-3">
-            <a class='nocolor' href="tel:951-282-7630">
-              <i class="icon-mobile" style='color:grey'></i>
-              <p>Call Me
-            </a>
-          </div>
-          
-          <div class="col-xs-6 col-md-3">
-            <a class='nocolor' href="sms:951-282-7630">
-              <i class="icon-comment" style='color:grey'></i>
-              <p>Text Me
-            </a>
-          </div>
-        </div>
-        <!-- /.services-2 -->
-        <div class="divide30"></div>
-        <div class="form-container">
-          <div class="response alert alert-success"></div>
-          <form class="forms">
-            <fieldset>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="form-row text-input-row name-field">
-                    <label>Name</label>
-                    <input type="text" name="name" placeholder='Enter your name' class="text-input defaultText required"/>
-                  </div>
-                  <div class="form-row text-input-row email-field">
-                    <label>Email</label>
-                    <input type="text" name="email" placeholder='Enter your email' class="text-input defaultText required email"/>
-                  </div>
-                  <div class="form-row text-input-row subject-field">
-                    <label>Subject</label>
-                    <input type="text" name="subject" placeholder='Enter a subject' class="text-input defaultText"/>
-                  </div>
-                </div>
-                <div class="col-sm-6 lp5">
-                  <div class="form-row text-area-row">
-                    <label>Message</label>
-                    <textarea name="message" placeholder="I'm listening" class="text-area required"></textarea>
-                  </div>
-                  <div class="form-row hidden-row">
-                    <input type="hidden" name="hidden" value="" />
-                  </div>
-                  <div class="nocomment">
-                    <label for="nocomment">Leave This Field Empty</label>
-                    <input id="nocomment" value="" name="nocomment" />
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="button-row pull-right">
-                    <input type="submit" value="Send Message" name="submit" class="btn btn-submit bm0" />
-                  </div>
-                </div>
-                <div class="col-sm-6 lp5">
-                  <div class="button-row pull-left">
-                    <input type="reset" value="Clear Message" name="reset" class="btn btn-submit bm0" />
-                  </div>
-                </div>
-                <!-- <input type="hidden" name="v_error" id="v-error" value="Required" />
-                <input type="hidden" name="v_email" id="v-email" value="Enter a valid email" /> -->
-              </div>
-            </fieldset>
-          </form>
-        </div>
-        <!-- /.form-container --> 
-        
-      </div>
-      <!-- /.box --> 
-    </section>
-    <!-- /#contact -->
-    
-    <footer class="footer box text-center">
-      <div class="row">
-        <div class="col-xs-12 col-sm-6">
-          <div class="row">
-            <div class="col-xs-3">
-              <a href="https://github.com/jontiritilli" target='_blank' rel="noopener noreferrer"><i class="icon-s-github" style='color:grey'></i></a>
-            </div>
-            <div class="col-xs-3">
-              <a href="https://www.facebook.com/jontiritilli" target='_blank' rel="noopener noreferrer"><i class="icon-s-facebook" style='color:grey'></i></a>
-            </div>
-            <div class="col-xs-3">
-              <a href="https://www.instagram.com/jontiritilli/" target='_blank' rel="noopener noreferrer"><i class="icon-s-instagram" style='color:grey'></i></a>
-            </div>
-            <div class="col-xs-3">
-              <a href="https://www.twitter.com/JonTiritilli" target='_blank' rel="noopener noreferrer"><i class="icon-s-twitter" style='color:grey'></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <p>2018 Jonathan Tiritilli. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-    <!-- /footer --> 
-    
+    <div class="parallax"><img src="assets/images/background1.jpg" alt="Unsplashed background img 1"></div>
   </div>
-  <!-- /.container --> 
-</div>
-<!-- /.body-wrapper --> 
-<script src="style/js/jquery.min.js"></script> 
-<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
-<script src="style/js/bootstrap.min.js"></script> 
-<script src="style/js/jquery.themepunch.tools.min.js"></script> 
-<script src="style/js/classie.js"></script> 
-<script src="style/js/plugins.js"></script> 
-<script src="style/js/scripts.js"></script>
-<script>
-  $(document).ready(addHandlers());
-  function addHandlers(){
-    $('.forms').on('submit', function(){
-      sendMail(validate())
-    }),
-    $('.forms').on('keyup', function(){
-      validate();
-    })
-  }
-  const rules = {
-    debug: false,
-    rules: {
-        name: "required",
-        email: {
-            required: true,
-            email: true
-        },
-        message: {
-            required: true,
-        }
-    },
-  }
 
-  function validate(){
-    if($('.forms').validate(rules)) {
-      return true
-    }
-    return false
-  }
 
-  function sendMail(validated){
-    if(!validated){
-      return
-    }
-    $.ajax({
-      url: 'http://dev.jonathantiritilli.com/send',
-      data: $('.forms').serialize(),
-      method: 'post',
-      success: function(res){
-        console.log(res)
-        $('input[type="text"]').val(' ');
-        $('textarea').val('Thank you for your email! I\'ll get back to you as soon as possible');
-      },
-      error: function(err){
-        $('input[type="text"]').val('');
-        $('message').val('there was an issue sending the email')
-      }
-    })
-  }
-</script>
-<script>
-	$.backstretch(["style/images/bg5.gif"]);
-</script>
-</body>
+  <div class="container" id="about">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">person</i></h2>
+            <h5 class="center">About Me</h5>
+            <p class="light">
+              My name is Jonathan Tiritilli. I am a web developer focused on server-side web technologies and database/server maintenance.
+            </p>
+            <img class='responsive-img' src="assets/images/me_img.gif" alt="" />
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">power</i></h2>
+            <h5 class="center">Skills</h5>
+
+            <p class="light">
+              I am comfortable deploying and maintaining full websites with all underlying technologies. This includes implementing Node or Apache/Nginx servers in conjunction with hosting services such as Amazon Web Services, as well as implementing and maintaining both SQL and NoSQL databases.
+            </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Experience</h5>
+
+            <p class="light">
+              I code in JavaScript (ES6, jQuery, NodeJS), PHP, MySQL, HTML5, and CSS3. In addition, I am familiar with libraries and frameworks
+              including Bootstrap, and Materialize, with experience in React.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container" id='about'>
+      <div class="container">
+        <div class="row">
+            <div class="carousel">
+              <a class="carousel-item" href="#one!">
+                <img src="assets/images/devicons/javascript.svg">
+              </a>
+              <a class="carousel-item" href="#two!">
+                <img src="assets/images/devicons/jquery.svg">
+              </a>
+              <a class="carousel-item" href="#two!">
+                <img src="assets/images/devicons/nodejs.svg">
+              </a>
+              <a class="carousel-item" href="#two!">
+                <img src="assets/images/devicons/express.svg">
+              </a>
+              <a class="carousel-item" href="#two!">
+                <img src="assets/images/devicons/github.svg">
+              </a>
+              <a class="carousel-item" href="#two!">
+                <img src="assets/images/devicons/git.svg">
+              </a>
+              <a class="carousel-item" href="#two!">
+                <img src="assets/images/devicons/aws.svg">
+              </a>
+              <a class="carousel-item" href="#two!">
+                <img src="assets/images/devicons/apache.svg">
+              </a>
+              <a class="carousel-item" href="#three!">
+                <img src="assets/images/devicons/NPM.svg">
+              </a>
+              <a class="carousel-item" href="#four!">
+                <img src="assets/images/devicons/mongoDB.svg">
+              </a>
+              <a class="carousel-item" href="#two!">
+                <img src="assets/images/devicons/mysql.svg">
+              </a>
+              <a class="carousel-item" href="#five!">
+                <img src="assets/images/devicons/html5.svg">
+              </a>
+              <a class="carousel-item" href="#two!">
+                <img src="assets/images/devicons/css3.svg">
+              </a>
+            </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/images/background2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container" id='contact'>
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3>
+            <i class="mdi-content-send brown-text"></i>
+          </h3>
+          <h4>Reach Out</h4>
+          <div class="row">
+            <div class="col s6 col m3 center-align">
+              <a class="black-text" target='_blank' rel="noopener noreferrer" href="https://www.google.com/maps/place/Fullerton,+CA/@33.8893864,-117.9595816,13z/data=!3m1!4b1!4m5!3m4!1s0x80dd2a74c381cb63:0xf59c53811e60ea4a!8m2!3d33.8703645!4d-117.9242123">
+                <p>Where Am I?</p>
+                <i class="material-icons">map</i>
+              </a>
+            </div>
+            
+            <div class="col s6 col m3 center-align">
+              <a class="black-text" href="mailto:JonTiritilli@gmail.com">
+                <p>Email Me</p>
+                <i class="material-icons">email</i>
+              </a>
+            </div>
+            
+            <div class="col s6 col m3 center-align">
+              <a class='black-text' href="tel:951-282-7630">
+                <p>Call Me</p>
+                <i class="material-icons">phone_iphone</i>
+              </a>
+            </div>
+            
+            <div class="col s6 col m3 center-align">
+              <a class="black-text" href="sms:951-282-7630">
+                <p>Text Me</p>
+                <i class="material-icons">mode_comment</i>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="first_name" type="text" class="validate">
+                  <label for="first_name">Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <label for="textarea1">Message</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <button class='btn teal'><i class="material-icons">send</i>Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper" id='four'>
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/images/background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer red">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h5 class="white-text">Elsewhere</h5>
+          <div class="row">
+            <div class="col s1 center-align"><a class="white-text" href="#!"><i class='fab fa-github-alt'></i></a></div>
+            <div class="col s1 center-align"><a class="white-text" href="#!"><i class='fab fa-twitter'></i></a></div>
+            <div class="col s1 center-align"><a class="white-text" href="#!"><i class='fab fa-facebook-f'></i></a></div>
+            <div class="col s1 center-align"><a class="white-text" href="#!"><i class='fab fa-github-alt'></i></a></div>
+            <div class="col s8 right-align">Author: Jonathan Tiritilli</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
 </html>
