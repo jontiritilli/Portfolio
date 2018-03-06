@@ -31,12 +31,12 @@
   }
   function sendMail(){
     $.ajax({
-      url: 'http://localhost:6700/send',
+      url: 'http:dev.jonathantiritilli.com/send',
       data: $('.contactForm').serialize(),
       method: 'post',
       success: function(res){
         console.log(res)
-        $('input[type="text"]').val(' ');
+        $('input').val('');
         $('textarea').val('Thank you for your email! I\'ll get back to you as soon as possible');
       },
       error: function(err){
