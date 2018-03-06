@@ -305,32 +305,5 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 
-<<<<<<< HEAD
-  function sendMail(validated){
-    if(!validated){
-      return
-    }
-    $.ajax({
-      url: 'http://jonathantiritilli.com/send',
-      data: $('.forms').serialize(),
-      method: 'post',
-      success: function(res){
-        console.log(res)
-        $('input[type="text"]').val(' ');
-        $('textarea').val('Thank you for your email! I\'ll get back to you as soon as possible');
-      },
-      error: function(err){
-        $('input[type="text"]').val('');
-        $('message').val('there was an issue sending the email')
-      }
-    })
-  }
-</script>
-<script>
-	$.backstretch(["style/images/bg5.gif"]);
-</script>
-</body>
-=======
   </body>
->>>>>>> 5ec731f9606726ea8b564d89db1ed0b71064e6ad
 </html>

@@ -31,7 +31,7 @@
   }
   function sendMail(){
     $.ajax({
-      url: 'http:dev.jonathantiritilli.com/send',
+      url: 'http://jonathantiritilli.com/send',
       data: $('.contactForm').serialize(),
       method: 'post',
       success: function(res){
