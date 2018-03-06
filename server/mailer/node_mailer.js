@@ -14,11 +14,12 @@ module.exports = function (app) {
                     pass: credentials.password
                 }
             });
+
             let output = `${req.body.name}, <br> ${req.body.message}`
+            
             let mailOptions = {
                 to: credentials.destination,
                 replyTo: req.body.email,
-                subject: req.body.subject,
                 html: output
             };
 
