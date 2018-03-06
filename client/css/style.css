@@ -17,9 +17,14 @@ p {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+
+.parallax-container .section {
+  width: 100%;
+}
+
+.parallax img {
+  filter: blur(2px);
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -27,7 +32,7 @@ p {
     top: 40%;
   }
   #index-banner .section {
-    top: 10%;
+    top: 20%;
   }
 }
 
@@ -48,8 +53,41 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+.logo {
+  width: 162px;
+  margin-top: 2px;
+}
+
 @media (min-width: 992px){
-  .logo{
+  .logo {
+    width: 190px;
     margin-left: 10px;
+  }
+}
+
+.name {
+  text-shadow: -2px -2px 18px #000;
+}
+
+.title {
+  font-size: 2rem;
+  text-shadow: -2px -2px 18px #000;
+}
+
+.skill {
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+@media (max-width: 992px) {
+  .skill {
+    width: 75%;
+  }
+}
+
+@media (max-width: 600px) {
+  .skill {
+    width: 40%;
   }
 }
