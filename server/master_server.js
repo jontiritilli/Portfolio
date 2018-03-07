@@ -9,7 +9,6 @@ const PORT = process.env.port || 6700;
 
 const app = express();
 
-app.use(cors());
 app.use(compression());
 app.use(minify());
 app.use(bodyParser.json());
