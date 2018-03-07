@@ -21,43 +21,43 @@
       </a>
       <ul class="right hide-on-med-and-down menu">
         <li>
-          <a id="#about">About</a>
+          <a id="#about" class='navBtn'>About</a>
         </li>
         <li>
-          <a id="#portfolio">Portfolio</a>
+          <a id="#portfolio" class='navBtn'>Portfolio</a>
         </li>
         <li>
-          <a id="#contact">Contact</a>
+          <a id="#contact" class='navBtn'>Contact</a>
         </li>
         <li>
-          <a href='#modal1'>Resume</A>
+          <a href='#resumeModal' class='modal-trigger'>Resume</A>
         </li>
       </ul>
       <ul class="menu side-nav" id="nav">
         <li>
-          <a id="#about" class='grey-text text-darken-3'><i class="material-icons">person</i>About</a>
+          <a id="#about" class='grey-text text-darken-3 navBtn'><i class="material-icons">person</i>About</a>
         </li>
         <li>
-          <a id="#portfolio" class='grey-text text-darken-3'><i class="material-icons">list</i>Portfolio</a>
+          <a id="#portfolio" class='grey-text text-darken-3 navBtn'><i class="material-icons">list</i>Portfolio</a>
         </li>
         <li>
-          <a id="#contact" class='grey-text text-darken-3'><i class="material-icons">perm_contact_calendar</i>Contact</a>
+          <a id="#contact" class='grey-text text-darken-3 navBtn'><i class="material-icons">perm_contact_calendar</i>Contact</a>
         </li>
         <li>
-          <a href='#modal1' class='grey-text text-darken-3'><i class="material-icons">open_in_browser</i>Resume</a>
+          <a class='grey-text text-darken-3 modal-trigger' href="#resumeModal"><i class="material-icons">open_in_browser</i>Resume</a>
         </li>
       </ul>
   </nav>
   <!-- Modal Structure -->
-  <div id="modal1" class="modal bottom-sheet">
+  <div id="resumeModal" class="modal">
     <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+      <embed src="https://docs.google.com/document/d/e/2PACX-1vTa2zOi0lIQ17wvHMOyRTjKpxIXo1joC9mLZlR84P3-ci1Gb1SfobTNait9YniQETxfivJela86O4sp/pub">
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      <a href="https://drive.google.com/file/d/1JNDA8BurgbXSMJZskylmEPx8fRB-GE4s/view?usp=sharing" target='_blank' rel='noopener noreferrer' class="modal-action modal-close waves-effect waves-green btn-flat">Download</a>
     </div>
   </div>
+
   <div id="index-banner" class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
@@ -316,9 +316,10 @@
 
 
   <!--  Scripts-->
-  <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js'></script>
-  <script src="js/materialize.js"></script>
+  <!-- <script src="js/materialize.js"></script> -->
+  <script src="js/materialize.min.js"></script>
   <script src="js/init.js"></script>
 
   </body>

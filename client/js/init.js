@@ -1,12 +1,15 @@
 (function($){
-  $(function(){
+  $(function () {
+    //initialize all modals           
+    $('.modal').modal();
 
+    $('.modal-trigger').on('click', ()=>{$('#resumeModal').modal('open')});
     $('.button-collapse').sideNav({
       draggable: true
     });
     $('.parallax').parallax();
     $('.carousel').carousel();
-    $(".menu a").on('click', ()=>{
+    $(".navBtn").on('click', ()=>{
       scrollAndHide(event.target.id);
     });
     $(".sendBtn").on('click', () => {
