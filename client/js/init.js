@@ -12,10 +12,8 @@
     $(".sendBtn").on('click', () => {
       sendMail();
     });
-    setInterval(()=>{ 
-      slideShow()}, 
-      3000
-    )
+    validate();
+
   }); // end of document ready
 })(jQuery); // end of jQuery name space
   function scrollAndHide(targetId){
@@ -23,15 +21,15 @@
     if(targetId){
       $('html, body').animate({
         scrollTop: $(`${targetId}`).offset().top
-      }, 2000);
+      }, 750);
     }
   }
-  function slideShow(){
-    $('.carousel').carousel('next')
-  }
   function sendMail(){
+    if (!$(".contactForm").valid()){
+      return
+    }
     $.ajax({
-      url: 'http://dev.jonathantiritilli.com/send',
+      url: '/send',
       data: $('.contactForm').serialize(),
       method: 'post',
       success: function(res){
@@ -44,4 +42,42 @@
         $('message').val('there was an issue sending the email')
       }
     })
+  }
+  function validate (){
+    $(".contactForm").validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 5
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        message: {
+          required: true,
+          minlength: 15
+        },
+      },
+      //For custom messages
+      messages: {
+        name: {
+          required: "Please provide your name",
+          minlength: "Enter at least 5 characters"
+        },
+        message: {
+          required: "Please enter a message",
+          minlength: "Enter at least 15 characters"
+        }
+      },
+      errorElement: 'div',
+      errorPlacement: function (error, element) {
+        var placement = $(element).data('error');
+        if (placement) {
+          $(placement).append(error)
+        } else {
+          error.insertAfter(element);
+        }
+      }
+    });
   }
