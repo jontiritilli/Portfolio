@@ -3,7 +3,9 @@
     //initialize all modals           
     $('.modal').modal();
 
-    $('.modal-trigger').on('click', ()=>{$('#resumeModal').modal('open')});
+    $('.modal-trigger').on('click', ()=>{
+      $('#resumeModal').modal('open');
+    });
     $('.button-collapse').sideNav({
       draggable: true
     });
@@ -30,6 +32,7 @@
   }
   function sendMail(){
     if (!$(".contactForm").valid()){
+      sendFailed();
       return
     }
     $.ajax({
