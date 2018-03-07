@@ -67,12 +67,18 @@ footer.page-footer {
 }
 
 .name {
-  text-shadow: -2px -2px 18px #000;
+      text-shadow: 3px 3px 12px rgba(0, 0, 0, .6),
+      -3px -3px 12px rgba(0, 0, 0, .6),
+      -3px 3px 12px rgba(0, 0, 0, .6),
+      3px -3px 12px rgba(0, 0, 0, .6);
 }
 
 .title {
   font-size: 2rem;
-  text-shadow: -2px -2px 18px #000;
+  text-shadow: 3px 3px 12px rgba(0, 0, 0, .6),
+  -3px -3px 12px rgba(0, 0, 0, .6),
+  -3px 3px 12px rgba(0, 0, 0, .6),
+  3px -3px 12px rgba(0, 0, 0, .6);
 }
 
 .skill {
@@ -90,4 +96,26 @@ footer.page-footer {
   .skill {
     width: 40%;
   }
+}
+
+.input-field div.error {
+  position: relative;
+  top: -1rem;
+  left: 0rem;
+  font-size: 0.8rem;
+  color: #FF4081;
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+.input-field label.active {
+  width: 100%;
+}
+
+.left-alert input[type=text]+label:after,
+.left-alert input[type=email]+label:after,
+.left-alert textarea.materialize-textarea+label:after {
+  left: 0px;
 }
