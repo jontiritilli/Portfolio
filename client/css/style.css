@@ -22,10 +22,6 @@ p {
   width: 100%;
 }
 
-#index-banner img {
-  filter: blur(2px);
-}
-
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
