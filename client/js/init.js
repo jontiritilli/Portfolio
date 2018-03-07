@@ -43,7 +43,6 @@
       }
     })
   }
-
   function validate (){
     $(".contactForm").validate({
       rules: {
