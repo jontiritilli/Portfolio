@@ -64,18 +64,18 @@ footer.page-footer {
 }
 
 .name {
-      text-shadow: 3px 3px 12px rgba(0, 0, 0, .6),
-      -3px -3px 12px rgba(0, 0, 0, .6),
-      -3px 3px 12px rgba(0, 0, 0, .6),
-      3px -3px 12px rgba(0, 0, 0, .6);
+      text-shadow: 3px 3px 12px rgba(0, 0, 0, .8),
+      -3px -3px 12px rgba(0, 0, 0, .8),
+      -3px 3px 12px rgba(0, 0, 0, .8),
+      3px -3px 12px rgba(0, 0, 0, .8)
 }
 
 .title {
   font-size: 2rem;
-  text-shadow: 3px 3px 12px rgba(0, 0, 0, .6),
-  -3px -3px 12px rgba(0, 0, 0, .6),
-  -3px 3px 12px rgba(0, 0, 0, .6),
-  3px -3px 12px rgba(0, 0, 0, .6);
+  text-shadow: 3px 3px 12px rgba(0, 0, 0, .8),
+  -3px -3px 12px rgba(0, 0, 0, .8),
+  -3px 3px 12px rgba(0, 0, 0, .8),
+  3px -3px 12px rgba(0, 0, 0, .8)
 }
 
 .skill {
