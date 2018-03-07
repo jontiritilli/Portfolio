@@ -10,6 +10,7 @@
       scrollAndHide(event.target.id);
     });
     $(".sendBtn").on('click', () => {
+      sendTrying()
       sendMail();
     });
     validate();
@@ -33,13 +34,14 @@
       data: $('.contactForm').serialize(),
       method: 'post',
       success: function(res){
-        console.log(res)
         $('input').val('');
         $('textarea').val('Thank you for your email! I\'ll get back to you as soon as possible');
+        sendComplete()
       },
       error: function(err){
-        $('input[type="text"]').val('');
-        $('message').val('there was an issue sending the email')
+        $('input').val('');
+        $('message').val('There was an issue sending the email')
+        sendFailed();
       }
     })
   }
@@ -80,4 +82,28 @@
         }
       }
     });
+  }
+
+  function sendTrying(){
+    let btn = $('.sendBtn');
+    btn.addClass('sending');
+    btn.empty();
+    let spinner = $('<div>');
+    spinner.append('Sending<i class="fas fa-spinner fa-pulse"></i>');
+    btn.append(spinner);
+  }
+
+  function sendFailed(){
+    let btn = $('.sendBtn')
+    btn.removeClass('sending');
+    btn.empty();
+    btn.append('Send<i class="material-icons right">send</i>');
+  }
+
+  function sendComplete(){
+    let btn = $('.sendBtn')
+    btn.addClass('disabled')
+    btn.removeClass('sending');
+    btn.empty();
+    btn.append('Sent<i class="material-icons right">send</i>');
   }

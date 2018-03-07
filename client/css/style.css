@@ -55,14 +55,15 @@ footer.page-footer {
 }
 
 .logo {
-  width: 162px;
-  margin-top: 2px;
+  width: 140px;
+  margin-top: 10px;
 }
 
 @media (min-width: 992px){
   .logo {
-    width: 190px;
+    width: 160px;
     margin-left: 10px;
+    margin-top: 6px;
   }
 }
 
@@ -88,7 +89,7 @@ footer.page-footer {
 
 @media (max-width: 992px) {
   .skill {
-    width: 75%;
+    width: 60%;
   }
 }
 
@@ -118,4 +119,11 @@ footer.page-footer {
 .left-alert input[type=email]+label:after,
 .left-alert textarea.materialize-textarea+label:after {
   left: 0px;
+}
+img.me {
+  width: 75%;
+}
+
+.sending{
+  animation: rotating 2s 0.25s linear 
 }
