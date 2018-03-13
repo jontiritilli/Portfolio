@@ -25,6 +25,7 @@
   <link rel="icon" href="assets/images/favicon.png">
 </head>
 <body class='grey lighten-3'>
+  <div class='btn blue lighten-3' id='topBtn'>Top</div>
   <nav>
     <div class="nav-wrapper blue lighten-3">
       <a href="/" class="brand-logo"><img class='logo' src="assets/images/logo-small.svg" alt="Logo"></a>
@@ -42,34 +43,41 @@
           <a id="#contact" class='navBtn'>Contact</a>
         </li>
         <li>
-          <a href='#resumeModal' class='modal-trigger'>Resume</A>
+            <a href="https://drive.google.com/file/d/1JNDA8BurgbXSMJZskylmEPx8fRB-GE4s/view?usp=sharing" target='_blank' rel='noopener noreferrer'>Resume</a>
         </li>
       </ul>
       <ul class="menu side-nav" id="nav">
         <li>
+          <a class='navBtn mobile-close-nav' href=""><i class="material-icons close-nav">close</i></a>
+        </li>
+        <li>
           <a id="#about" class='grey-text text-darken-3 navBtn'><i class="material-icons">person</i>About</a>
         </li>
         <li>
-          <a id="#portfolio" class='grey-text text-darken-3 navBtn'><i class="material-icons">list</i>Portfolio</a>
+          <a id="#portfolio" class='grey-text text-darken-3 navBtn'><i class="material-icons">view_carousel</i>Portfolio</a>
         </li>
         <li>
           <a id="#contact" class='grey-text text-darken-3 navBtn'><i class="material-icons">perm_contact_calendar</i>Contact</a>
         </li>
         <li>
-          <a class='grey-text text-darken-3 modal-trigger' href="#resumeModal"><i class="material-icons">open_in_browser</i>Resume</a>
+          <a class='grey-text text-darken-3 modal-trigger' href="https://drive.google.com/file/d/1JNDA8BurgbXSMJZskylmEPx8fRB-GE4s/view?usp=sharing" target='_blank' rel='noopener noreferrer' class="modal-action modal-close btn-flat"><i class="material-icons">open_in_browser</i>Resume</a>
+        </li>
+        <li>
+          <div class="row">
+            <div class="col s3 offset-s1 center-align">
+              <a target='_blank' rel='noopener noreferrer' href="https://github.com/jontiritilli">
+                <i class='fab fa-github-alt'></i>
+              </a>
+            </div>
+            <div class="col s3 center-align">
+              <a target='_blank' rel='noopener noreferrer' href="https://www.linkedin.com/in/jontiritilli/">
+                <i class='fab fa-linkedin'></i>
+              </a>
+            </div>
+          </div>
         </li>
       </ul>
   </nav>
-  <!-- Modal Structure -->
-  <div id="resumeModal" class="modal">
-    <div class="modal-content">
-      <embed src="https://docs.google.com/document/d/e/2PACX-1vTa2zOi0lIQ17wvHMOyRTjKpxIXo1joC9mLZlR84P3-ci1Gb1SfobTNait9YniQETxfivJela86O4sp/pub">
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close btn-flat">Close</a>
-      <a href="https://drive.google.com/file/d/1JNDA8BurgbXSMJZskylmEPx8fRB-GE4s/view?usp=sharing" target='_blank' rel='noopener noreferrer' class="modal-action modal-close btn-flat">Download</a>
-    </div>
-  </div>
 
   <div id="index-banner" class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -83,6 +91,19 @@
     <div class="parallax"><img src="assets/images/backgrounds/Background1.jpg" alt="background 1"></div>
   </div>
 
+  
+  <div class="row top-links">
+    <div class="col s2 m1 offset-s8 offset-m10 center-align">
+      <a target='_blank' rel='noopener noreferrer' class="blue-text text-lighten-1" href="https://github.com/jontiritilli">
+        <i class='fab fa-github-alt'></i>
+      </a>
+    </div>
+    <div class="col s2 m1 center-align">
+      <a target='_blank' rel='noopener noreferrer' class="blue-text text-lighten-1" href="https://www.linkedin.com/in/jontiritilli/">
+        <i class='fab fa-linkedin'></i>
+      </a>
+    </div>
+  </div>
   <div class="container" id="about">
     <div class="section">
       <div class="row">
@@ -91,10 +112,10 @@
             <h2 class="center grey-text text-darken-3"><i class="material-icons">person</i></h2>
             <h5 class="center">About Me</h5>
             <div class="col s12 center-align">
-              <img class='responsive-img circle me' src="assets/images/me_img.svg" alt="" />
+              <img class='responsive-img circle me' src="assets/images/me_img.jpg" alt="" />
             </div>
             <p class="light">
-              My name is Jonathan Tiritilli. I am a web developer focused on back-end stack with a familarity in front-end technologies.
+              My name is Jonathan Tiritilli. I am a web developer focused on back-end stack with a familarity in front-end technologies. My journey has taken me through many aspects of business, from client interaction and sales, to product development and team management. I am experienced in both front and back end development, leadership, organization, and team management.
             </p>
           </div>
         </div>
@@ -166,18 +187,7 @@
     </div>
   </div>
 
-  <div class="parallax-container valign-wrapper" id='two'>
-    <!-- <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header brown-text col s12 bold">"What one programmer can do in one month, two programmers can do in two months." - Fred Brooks</h5>
-        </div>
-      </div>
-    </div> -->
-    <div class="parallax">
-      <img src="assets/images/backgrounds/background2.jpeg" alt="Unsplashed background img 2">
-    </div>
-  </div>
+  <div class="divider"></div>
 
   <div class="container" id="portfolio">
     <div class="row">
@@ -216,19 +226,7 @@
     </div>
   </div>
 
-  <div class="parallax-container valign-wrapper" id='three'>
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 bold">Design, Build, Destroy, Rebuild</h5>
-        </div>
-      </div>
-      <div class="parallax">
-        <img src="assets/images/backgrounds/background3.jpeg" alt="Unsplashed background img 3">
-      </div>
-    </div>
-  </div>  
-
+  <div class="divider"></div>
 
   <div class="container" id='contact'>
     <div class="section">
@@ -316,10 +314,26 @@
         <div class="col s12">
           <h5 class="grey-text text-darken-3">Elsewhere</h5>
           <div class="row">
-            <div class="col s1 center-align"><a target='_blank' rel='noopener noreferrer' class="grey-text text-darken-3" href="https://github.com/jontiritilli"><i class='fab fa-github-alt'></i></a></div>
-            <div class="col s1 center-align"><a target='_blank' rel='noopener noreferrer' class="grey-text text-darken-3" href="https://www.twitter.com/JonTiritilli"><i class='fab fa-twitter'></i></a></div>
-            <div class="col s1 center-align"><a target='_blank' rel='noopener noreferrer' class="grey-text text-darken-3" href="https://www.facebook.com/jontiritilli"><i class='fab fa-facebook-f'></i></a></div>
-            <div class="col s1 center-align"><a target='_blank' rel='noopener noreferrer' class="grey-text text-darken-3" href="https://www.instagram.com/jontiritilli"><i class='fab fa-instagram'></i></a></div>
+            <div class="col s1 center-align">
+              <a target='_blank' rel='noopener noreferrer' class="grey-text text-darken-3" href="https://github.com/jontiritilli">
+                <i class='fab fa-github-alt'></i>
+              </a>
+            </div>
+            <div class="col s1 center-align">
+              <a target='_blank' rel='noopener noreferrer' class="grey-text text-darken-3" href="https://www.linkedin.com/in/jontiritilli/">
+                <i class='fab fa-linkedin'></i>
+              </a>
+            </div>
+            <div class="col s1 center-align">
+              <a target='_blank' rel='noopener noreferrer' class="grey-text text-darken-3" href="https://www.twitter.com/JonTiritilli">
+                <i class='fab fa-twitter'></i>
+              </a>
+            </div>
+            <div class="col s1 center-align">
+              <a target='_blank' rel='noopener noreferrer' class="grey-text text-darken-3" href="https://www.facebook.com/jontiritilli">
+                <i class='fab fa-facebook-f'></i>
+              </a>
+            </div>
             <div class="col s8 right-align grey-text text-darken-3">Author: Jonathan Tiritilli</div>
           </div>
         </div>
@@ -331,7 +345,6 @@
   <!--  Scripts-->
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js'></script>
-  <!-- <script src="js/materialize.js"></script> -->
   <script src="js/materialize.min.js"></script>
   <script src="js/init.js"></script>
 

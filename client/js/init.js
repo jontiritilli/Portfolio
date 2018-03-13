@@ -1,34 +1,52 @@
 (function($){
   $(function () {
-    //initialize all modals           
-    $('.modal').modal();
-
-    $('.modal-trigger').on('click', ()=>{
-      $('#resumeModal').modal('open');
-    });
+    window.addEventListener('scroll', () => {
+      addTopBtn();
+    })
+    $('#topBtn').on('click', () => {
+      topFunction();
+    })
+    $('.mobile-close-nav').on('click', () => {
+      event.preventDefault();
+      closeSideNav();
+    })
     $('.button-collapse').sideNav({
       draggable: true
     });
     $('.parallax').parallax();
     $('.carousel').carousel();
-    $(".navBtn").on('click', ()=>{
+    $('.navBtn').on('click', ()=>{
       scrollAndHide(event.target.id);
     });
-    $(".sendBtn").on('click', () => {
-      sendTrying()
+    $('.sendBtn').on('click', () => {
+      sendTrying();
       sendMail();
     });
     validate();
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
+  function addTopBtn(){
+    if (window.scrollY > 65) {
+      return document.getElementById('topBtn').style.display = "block";
+    }
+    document.getElementById('topBtn').style.display = "none";
+  }
+  function topFunction() {
+    $('html, body').animate({
+      scrollTop: $(`body`).offset().top
+    }, 750);
+  }
   function scrollAndHide(targetId){
-    $('.button-collapse').sideNav('hide');
+    closeSideNav();
     if(targetId){
       $('html, body').animate({
         scrollTop: $(`${targetId}`).offset().top
       }, 750);
     }
+  }
+  function closeSideNav(){
+    $('.button-collapse').sideNav('hide');
   }
   function sendMail(){
     if (!$(".contactForm").valid()){
