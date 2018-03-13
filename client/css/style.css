@@ -48,6 +48,8 @@ p {
 
 footer.page-footer {
   margin: 0;
+  width: 100%;
+  position: absolute;
 }
 
 .logo {
@@ -120,17 +122,33 @@ img.me {
   width: 75%;
 }
 
-.sending{
+.side-nav>li>a.mobile-close-nav>i.close-nav {
+  float: right;
+  margin: 0;
+  color: black;
+}
+
+.top-links {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 24px;
+}
+.sending {
   animation: rotating 2s 0.25s linear 
 }
 
-.modal {
-  width: 90%;
-  max-height: 80%;
+i.fa-pulse {
+  margin-left: 15px;
 }
-embed {
-  width: 100%;
-  height: 350px;
+
+
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar-button {
