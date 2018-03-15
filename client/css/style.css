@@ -141,6 +141,13 @@ i.fa-pulse {
   margin-left: 15px;
 }
 
+p {
+  margin-bottom: 0;
+}
+
+.contact-icon {
+  font-size: 35px;
+}
 
 #topBtn {
   display: none;

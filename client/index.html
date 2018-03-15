@@ -4,15 +4,42 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Tiritilli</title>
+  <!-- Google Analytics -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115364449-1');
+  </script>
   <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="stylesheet" href="/css/fontawesome-all.min.css">
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="icon" href="assets/images/favicon.png">
 </head>
 <body class='grey lighten-3'>
+  <script>
+    (function () {
+      var req = document.createElement("link");
+      req.rel = "stylesheet";
+      req.href = "css/style.css";
+      document.body.appendChild(req);
+    })();
+    (function () {
+      var req = document.createElement("link");
+      req.rel = "stylesheet";
+      req.href = "https://fonts.googleapis.com/icon?family=Material+Icons";
+      document.body.appendChild(req);
+    })();
+    (function () {
+      var req = document.createElement("link");
+      req.rel = "stylesheet";
+      req.href = "css/fontawesome-all.min.css";
+      document.body.appendChild(req);
+    })();
+  </script>
   <div class='btn blue lighten-3' id='topBtn'>Top</div>
   <nav>
     <div class="nav-wrapper blue lighten-3">
@@ -76,7 +103,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="assets/images/backgrounds/Background1.jpg" alt="background 1"></div>
+    <div class="parallax"><img src="assets/images/backgrounds/Background1.webp" alt="background 1"></div>
   </div>
 
   
@@ -100,7 +127,7 @@
             <h2 class="center grey-text text-darken-3"><i class="material-icons">person</i></h2>
             <h5 class="center">About Me</h5>
             <div class="col s12 center-align">
-              <img class='responsive-img circle me' src="assets/images/me_img.jpg" alt="" />
+              <img class='responsive-img circle me' src="assets/images/me_img.webp" alt="Personal Picture"/>
             </div>
             <p class="light">
               My name is Jonathan Tiritilli. I am a web developer focused on back-end stack with a familarity in front-end technologies. My journey has taken me through many aspects of business, from client interaction and sales, to product development and team management. I am experienced in both front and back end development, leadership, organization, and team management.
@@ -197,7 +224,7 @@
       <div class="col s12 m4">
         <h5 class='center'>Calculator</h5>
         <a target='blank' rel='noopener noreferrer' href="https://calculator.jonathantiritilli.com">
-          <img src="assets/images/calculator.png" alt="" class='responsive-img'>
+          <img src="assets/images/calculator.webp" alt="" class='responsive-img'>
         </a>
         <div class="col s6 center">
           <a target='blank' rel='noopener noreferrer' href="https://github.com/jontiritilli/calc">GitHub</a>
@@ -232,28 +259,28 @@
         <div class="col s6 col m3 center-align">
           <a class="grey-text text-darken-3" target='_blank' rel="noopener noreferrer" href="https://www.google.com/maps/place/Fullerton,+CA/@33.8893864,-117.9595816,13z/data=!3m1!4b1!4m5!3m4!1s0x80dd2a74c381cb63:0xf59c53811e60ea4a!8m2!3d33.8703645!4d-117.9242123">
             <p>Where Am I?</p>
-            <i class="material-icons">map</i>
+            <i class="material-icons contact-icon">map</i>
           </a>
         </div>
         
         <div class="col s6 col m3 center-align">
           <a class="grey-text text-darken-3" href="mailto:JonTiritilli@gmail.com">
             <p>Email Me</p>
-            <i class="material-icons">email</i>
+            <i class="material-icons contact-icon">email</i>
           </a>
         </div>
         
         <div class="col s6 col m3 center-align">
           <a class='grey-text text-darken-3' href="tel:951-282-7630">
             <p>Call Me</p>
-            <i class="material-icons">phone_iphone</i>
+            <i class="material-icons contact-icon">phone_iphone</i>
           </a>
         </div>
         
         <div class="col s6 col m3 center-align">
           <a class="grey-text text-darken-3" href="sms:951-282-7630">
             <p>Text Me</p>
-            <i class="material-icons">mode_comment</i>
+            <i class="material-icons contact-icon">mode_comment</i>
           </a>
         </div>
       </div>
@@ -335,6 +362,5 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js'></script>
   <script src="js/materialize.min.js"></script>
   <script src="js/init.js"></script>
-
   </body>
 </html>
