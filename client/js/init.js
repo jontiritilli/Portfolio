@@ -23,6 +23,13 @@
       sendMail();
     });
     validate();
+    $.validator.methods.email = function (value, element) {
+      console.log(this)
+      return this.optional(element) || /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?$/.test(value);
+    }
+    $.validator.addMethod("lettersOnly", function (value, element) {
+      return this.optional(element) || /^([a-zA-Z0-9]+\s?[a-zA-Z0-9])*$/.test(value)
+    }, "Alpha only");
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
@@ -69,12 +76,14 @@
       }
     })
   }
+
   function validate (){
     $(".contactForm").validate({
       rules: {
         name: {
           required: true,
-          minlength: 5
+          lettersOnly: true,
+          minlength: 2
         },
         email: {
           required: true,
@@ -89,7 +98,8 @@
       messages: {
         name: {
           required: "Please provide your name",
-          minlength: "Enter at least 5 characters"
+          lettersOnly: 'Use only text characters',
+          minlength: "Enter at least 2 characters"
         },
         message: {
           required: "Please enter a message",
