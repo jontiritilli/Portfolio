@@ -137,6 +137,10 @@ img.me {
   animation: rotating 2s 0.25s linear 
 }
 
+i.resume_dl {
+  margin-top: 4px;
+  font-size: 28px;
+}
 i.fa-pulse {
   margin-left: 15px;
 }
