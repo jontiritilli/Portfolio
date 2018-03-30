@@ -5,7 +5,7 @@ const minify = require('express-minify');
 var compression = require('compression');
 const bodyParser = require('body-parser');
 
-const PORT = process.env.port || 8501;
+const PORT = process.env.port || 8500;
 
 const app = express();
 
