@@ -96,7 +96,12 @@ footer.page-footer {
     width: 40%;
   }
 }
-
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
 .input-field div.error {
   position: relative;
   top: -1rem;
@@ -134,7 +139,7 @@ img.me {
   font-size: 24px;
 }
 .sending {
-  animation: rotating 2s 0.25s linear 
+  animation: rotating 2s 0.25s linear
 }
 
 i.resume_dl {
@@ -148,11 +153,9 @@ i.fa-pulse {
 p {
   margin-bottom: 0;
 }
-
 .contact-icon {
   font-size: 35px;
 }
-
 #topBtn {
   display: none;
   position: fixed;
@@ -161,40 +164,24 @@ p {
   z-index: 99;
   cursor: pointer;
 }
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
+.modal-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 10px;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 50%;
 }
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
+.modal-close>svg {
+  width: 24px;
+  fill: white;
+  pointer-events: none;
+  vertical-align: top;
 }
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
+.modal-close:hover {
+  background-color: rgba(0, 0, 0, 0.6);
 }
-
 ::-webkit-scrollbar-button {
   display: none;
   height: 13px;
