@@ -14,7 +14,8 @@
       draggable: true
     });
     $('.parallax').parallax();
-    $('.carousel').carousel();
+    //deploy modals
+    $('.modal').modal();
     $('.navBtn').on('click', ()=>{
       scrollAndHide(event.target.id);
     });
@@ -24,7 +25,6 @@
     });
     validate();
     $.validator.methods.email = function (value, element) {
-      console.log(this)
       return this.optional(element) || /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?$/.test(value);
     }
     $.validator.addMethod("lettersOnly", function (value, element) {
@@ -65,13 +65,15 @@
       data: $('.contactForm').serialize(),
       method: 'post',
       success: function(res){
-        $('input').val('');
-        $('textarea').val('Thank you for your email! I\'ll get back to you as soon as possible');
-        sendComplete()
+        $('input, textarea').prop({
+          disabled: true
+        });
+        sendComplete();
       },
       error: function(err){
-        $('input').val('');
-        $('message').val('There was an issue sending the email')
+        $('.modalHeader').text('Error');
+        $('.modalMessage').text('There was an issue sending your message, please try again');
+        $('.modal').modal('open')
         sendFailed();
       }
     })
