@@ -113,11 +113,9 @@ input:-webkit-autofill:active {
   -o-transform: translateY(0%);
   transform: translateY(0%);
 }
-
 .input-field label.active {
   width: 100%;
 }
-
 .left-alert input[type=text]+label:after,
 .left-alert input[type=email]+label:after,
 .left-alert textarea.materialize-textarea+label:after {
@@ -126,13 +124,18 @@ input:-webkit-autofill:active {
 img.me {
   width: 75%;
 }
-
+.container a {
+  display: block;
+}
+.container a>img {
+  display: block;
+  margin: 0 auto;
+}
 .side-nav>li>a.mobile-close-nav>i.close-nav {
   float: right;
   margin: 0;
   color: black;
 }
-
 .top-links {
   margin-top: 10px;
   margin-bottom: 0;
@@ -141,7 +144,6 @@ img.me {
 .sending {
   animation: rotating 2s 0.25s linear
 }
-
 i.resume_dl {
   margin-top: 4px;
   font-size: 28px;
@@ -149,7 +151,6 @@ i.resume_dl {
 i.fa-pulse {
   margin-left: 15px;
 }
-
 p {
   margin-bottom: 0;
 }
@@ -188,27 +189,21 @@ p {
   border-radius: 0px;
   background-color: #bfbfbf;
 }
-
 ::-webkit-scrollbar-button:hover {
   background-color: #AAA;
 }
-
 ::-webkit-scrollbar-thumb {
   background-color: #b2b2b2;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background-color: #7a7a7a;
 }
-
 ::-webkit-scrollbar-track {
   background-color: #efefef;
 }
-
 ::-webkit-scrollbar-track:hover {
   background-color: #CCC;
 }
-
 ::-webkit-scrollbar {
   width: 13px;
 }
