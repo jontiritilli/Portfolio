@@ -66,18 +66,18 @@ footer.page-footer {
 }
 
 .name {
-      text-shadow: 3px 3px 12px rgba(0, 0, 0, .8),
-      -3px -3px 12px rgba(0, 0, 0, .8),
-      -3px 3px 12px rgba(0, 0, 0, .8),
-      3px -3px 12px rgba(0, 0, 0, .8)
+      text-shadow: 1px 1px 12px rgba(0,0,0,.6),
+      -1px -1px 12px rgba(0,0,0,.6),
+      -1px 1px 12px rgba(0,0,0,.6),
+      1px -1px 12px rgba(0,0,0,.6)
 }
 
 .title {
   font-size: 2rem;
-  text-shadow: 3px 3px 12px rgba(0, 0, 0, .8),
-  -3px -3px 12px rgba(0, 0, 0, .8),
-  -3px 3px 12px rgba(0, 0, 0, .8),
-  3px -3px 12px rgba(0, 0, 0, .8)
+  text-shadow: 1px 1px 12px rgba(0,0,0,.6),
+  -1px -1px 12px rgba(0,0,0,.6),
+  -1px 1px 12px rgba(0,0,0,.6),
+  1px -1px 12px rgba(0,0,0,.6)
 }
 
 .skill {
@@ -136,6 +136,9 @@ img.me {
   margin: 0;
   color: black;
 }
+svg path {
+  fill: #fff !important;
+}
 .top-links {
   margin-top: 10px;
   margin-bottom: 0;
@@ -182,6 +185,12 @@ p {
 }
 .modal-close:hover {
   background-color: rgba(0, 0, 0, 0.6);
+}
+.quickResume {
+}
+.quickContact.btn.right {
+  margin-left: 10px;
+
 }
 ::-webkit-scrollbar-button {
   display: none;
