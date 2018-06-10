@@ -188,7 +188,7 @@ p {
 }
 .row .col.landBtn {
   margin-left: 6.25%;
-  font-size: 3vmin;
+  font-size: 2.8vmin;
 }
 footer a .fab,
 footer a .fas {
@@ -226,7 +226,7 @@ footer a .fas {
 
 .tooltip .tooltiptext {
   width: 120px;
-  bottom: 100%;
+  bottom: 115%;
   left: 50%;
   margin-left: -60px;
   padding: 5px 0;
