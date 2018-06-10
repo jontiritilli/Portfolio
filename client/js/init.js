@@ -17,7 +17,6 @@
     //deploy modals
     $('.modal').modal();
     $('.navBtn').on('click', ()=>{
-      console.log(event.target)
       scrollAndHide(event.target.id);
     });
     $('.sendBtn').on('click', () => {
