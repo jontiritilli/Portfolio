@@ -186,11 +186,13 @@ p {
 .modal-close:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
-.quickResume {
+.row .col.landBtn {
+  margin-left: 6.25%;
+  font-size: 3vmin;
 }
-.quickContact.btn.right {
-  margin-left: 10px;
-
+footer a .fab,
+footer a .fas {
+  font-size: 25px;
 }
 ::-webkit-scrollbar-button {
   display: none;
