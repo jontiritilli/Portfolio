@@ -16,8 +16,8 @@
     $('.parallax').parallax();
     //deploy modals
     $('.modal').modal();
-    $('.navBtn').on('click', ()=>{
-      scrollAndHide(event.target.id);
+    $('.navBtn').on('click', (event)=>{
+      scrollAndHide($(event.target).attr('scrolltarget'));
     });
     $('.sendBtn').on('click', () => {
       sendTrying();
@@ -75,11 +75,12 @@
       scrollTop: $(`body`).offset().top
     }, 750);
   }
-  function scrollAndHide(targetId){
+  function scrollAndHide(target){
     closeSideNav();
-    if(targetId){
+    if(target){
+      console.log('clicked')
       $('html, body').animate({
-        scrollTop: $(targetId).offset().top
+        scrollTop: $(target).offset().top
       }, 750);
     }
   }

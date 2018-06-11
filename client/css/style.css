@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'raleway', sans-serif;
+  src: url('../assets/fonts/raleway/Raleway-Regular.ttf');
+}
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -64,24 +68,28 @@ footer.page-footer {
     margin-top: 6px;
   }
 }
-
+.project-title {
+  font-family: 'raleway';
+  font-size: 20px;
+  font-weight: 600;
+}
 .name {
-      text-shadow: 1px 1px 12px rgba(0,0,0,.6),
-      -1px -1px 12px rgba(0,0,0,.6),
-      -1px 1px 12px rgba(0,0,0,.6),
-      1px -1px 12px rgba(0,0,0,.6)
+      text-shadow: 1px 1px 7px rgba(0,0,0,.3),
+      -1px -1px 7px rgba(0,0,0,.3),
+      -1px 1px 7px rgba(0,0,0,.3),
+      1px -1px 7px rgba(0,0,0,.3)
 }
 
 .title {
   font-size: 2rem;
-  text-shadow: 1px 1px 12px rgba(0,0,0,.6),
-  -1px -1px 12px rgba(0,0,0,.6),
-  -1px 1px 12px rgba(0,0,0,.6),
-  1px -1px 12px rgba(0,0,0,.6)
+  text-shadow: 1px 1px 7px rgba(0,0,0,.3),
+  -1px -1px 7px rgba(0,0,0,.3),
+  -1px 1px 7px rgba(0,0,0,.3),
+  1px -1px 7px rgba(0,0,0,.3)
 }
 
 .skill {
-  width: 100%;
+  width: 50%;
   margin-top: 15%;
 }
 
@@ -122,7 +130,7 @@ input:-webkit-autofill:active {
   left: 0px;
 }
 img.me {
-  width: 75%;
+  width: 25%;
 }
 .container a {
   display: block;
