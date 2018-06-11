@@ -79,7 +79,7 @@
     closeSideNav();
     if(targetId){
       $('html, body').animate({
-        scrollTop: $(`${targetId}`).offset().top
+        scrollTop: $(targetId).offset().top
       }, 750);
     }
   }
