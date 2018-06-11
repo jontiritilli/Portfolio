@@ -1,6 +1,10 @@
 @font-face {
-  font-family: 'raleway', sans-serif;
-  src: url('../assets/fonts/raleway/Raleway-Regular.ttf');
+  font-family: 'raleway';
+  src: url('../assets/fonts/raleway/Raleway-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'raleway-bold';
+  src: url('../assets/fonts/raleway/Raleway-Medium.ttf') format('truetype');
 }
 nav ul a,
 nav .brand-logo {
@@ -68,6 +72,11 @@ footer.page-footer {
     margin-top: 6px;
   }
 }
+.project-link {
+  font-family: raleway-bold;
+  font-size: 15px;
+  color: blue;
+}
 .project-title {
   font-family: 'raleway';
   font-size: 20px;
@@ -131,6 +140,11 @@ input:-webkit-autofill:active {
 }
 img.me {
   width: 25%;
+}
+@media (max-width: 600px){
+  img.me {
+    width: 55%;
+  }
 }
 .container a {
   display: block;
