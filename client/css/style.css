@@ -163,7 +163,7 @@ p {
 #topBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 40px;
   right: 30px;
   z-index: 99;
   cursor: pointer;
@@ -233,9 +233,9 @@ footer a .fas {
 }
 
 .tooltip .tooltiptext {
-  width: 120px;
-  bottom: 115%;
-  left: 50%;
+  width: 95px;
+  bottom: 10%;
+  right: 70%;
   margin-left: -60px;
   padding: 5px 0;
   border-radius: 2px;
