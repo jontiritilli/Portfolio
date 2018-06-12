@@ -82,19 +82,11 @@ footer.page-footer {
   font-size: 20px;
   font-weight: 600;
 }
-.name {
-      text-shadow: 1px 1px 7px rgba(0,0,0,.3),
-      -1px -1px 7px rgba(0,0,0,.3),
-      -1px 1px 7px rgba(0,0,0,.3),
-      1px -1px 7px rgba(0,0,0,.3)
+.billboardShadow {
+      text-shadow: -1px -1px 12px rgba(0,0,0,0.2);
 }
-
 .title {
   font-size: 2rem;
-  text-shadow: 1px 1px 7px rgba(0,0,0,.3),
-  -1px -1px 7px rgba(0,0,0,.3),
-  -1px 1px 7px rgba(0,0,0,.3),
-  1px -1px 7px rgba(0,0,0,.3)
 }
 
 .skill {
@@ -182,8 +174,11 @@ p {
 .contact-icon {
   font-size: 35px;
 }
+.raleway {
+  font-family: 'raleway';
+  font-size: 20px;
+}
 #topBtn {
-  display: none;
   position: fixed;
   bottom: 40px;
   right: 30px;
