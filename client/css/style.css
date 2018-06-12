@@ -78,9 +78,8 @@ footer.page-footer {
   color: blue;
 }
 .project-title {
-  font-family: 'raleway';
+  font-family: 'raleway-bold';
   font-size: 20px;
-  font-weight: 600;
 }
 .billboardShadow {
       text-shadow: -1px -1px 12px rgba(0,0,0,0.2);
@@ -174,16 +173,30 @@ p {
 .contact-icon {
   font-size: 35px;
 }
+.contactForm {
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  background-color: rgba(255,255,255,.7);
+}
 .raleway {
-  font-family: 'raleway';
+  font-family: 'raleway-bold';
   font-size: 20px;
 }
 #topBtn {
   position: fixed;
-  bottom: 40px;
+  bottom: 20px;
   right: 30px;
   z-index: 99;
   cursor: pointer;
+}
+@media (max-width: 600px){
+  #topBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+  }
 }
 .modal-close {
 	position: absolute;
