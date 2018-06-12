@@ -79,7 +79,6 @@
   function scrollAndHide(target){
     closeSideNav();
     if(target){
-      console.log('clicked')
       $('html, body').animate({
         scrollTop: $(target).offset().top
       }, 750);
