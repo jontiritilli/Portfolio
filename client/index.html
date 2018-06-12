@@ -57,13 +57,13 @@
       </a>
       <ul class='right hide-on-med-and-down menu'>
         <li>
-          <a id='#about' class='navBtn white-text'>About</a>
+          <a scrollTarget='#about' class='navBtn white-text'>About</a>
         </li>
         <li>
-          <a id='#portfolio' class='navBtn white-text'>Portfolio</a>
+          <a scrollTarget='#portfolio' class='navBtn white-text'>Portfolio</a>
         </li>
         <li>
-          <a id='#contact' class='navBtn white-text'>Contact</a>
+          <a scrollTarget='#contact' class='navBtn white-text'>Contact</a>
         </li>
         <li>
             <a class='white-text' href='https://drive.google.com/file/d/19fR8XgG4ZkKilMni_2LxM3uADHBDBMlC/view?usp=sharing' target='_blank' rel='noopener noreferrer'>Resume</a>
@@ -74,13 +74,13 @@
           <a class='navBtn mobile-close-nav' href=''><i class='material-icons close-nav'>close</i></a>
         </li>
         <li>
-          <a id='#about' class='grey-text text-darken-3 navBtn'><i class='material-icons'>person</i>About</a>
+          <a scrollTarget='#about' class='grey-text text-darken-3 navBtn'><i class='material-icons'>person</i>About</a>
         </li>
         <li>
-          <a id='#portfolio' class='grey-text text-darken-3 navBtn'><i class='material-icons'>view_carousel</i>Portfolio</a>
+          <a scrollTarget='#portfolio' class='grey-text text-darken-3 navBtn'><i class='material-icons'>view_carousel</i>Portfolio</a>
         </li>
         <li>
-          <a id='#contact' class='grey-text text-darken-3 navBtn'><i class='material-icons'>perm_contact_calendar</i>Contact</a>
+          <a scrollTarget='#contact' class='grey-text text-darken-3 navBtn'><i class='material-icons'>perm_contact_calendar</i>Contact</a>
         </li>
         <li>
           <a class='grey-text text-darken-3 modal-trigger' href='https://drive.google.com/file/d/19fR8XgG4ZkKilMni_2LxM3uADHBDBMlC/view?usp=sharing' target='_blank' rel='noopener noreferrer' class='modal-action modal-close btn-flat'><i class='material-icons'>open_in_browser</i>Resume</a>
@@ -105,22 +105,22 @@
   <div id='index-banner' class='parallax-container valign-wrapper'>
     <div class='section no-pad-bot'>
       <div class='container'>
-        <h1 class='header center name'>Jonathan Tiritilli</h1>
+        <h1 class='header center name billboardShadow'>Jonathan Tiritilli</h1>
         <div class='row center'>
-          <h5 class='header col s12 light title'>Web Developer</h5>
+          <h5 class='header col s12 light billboardShadow'>Web Developer</h5>
         </div>
         <div class='quickContactContainer row'>
           <div class="col s12">
             <div class="row">
-              <a id='#contact' class='navBtn landBtn btn btn-large blue darken-2 offset-s1 col s3' >
-                <i class='fas fa-mail'></i>
-                <span class='hide-on-small-only'>Contact</span>
-              </a>
-              <a class='landBtn btn btn-large green darken-2 col s3' href='https://drive.google.com/file/d/19fR8XgG4ZkKilMni_2LxM3uADHBDBMlC/view?usp=sharing' target='_blank' rel='noopener noreferrer'>
+              <btn scrollTarget='#contact' class='navBtn landBtn btn btn-large blue darken-2 offset-s1 col s3 scale-transition scale-out'>
+                <i scrollTarget='#contact' class='navBtn fas fa-mail'></i>
+                <span scrollTarget='#contact' class='navBtn hide-on-small-only'>Contact</span>
+              </btn>
+              <a class='landBtn btn btn-large green darken-2 col s3 scale-transition scale-out' href='https://drive.google.com/file/d/19fR8XgG4ZkKilMni_2LxM3uADHBDBMlC/view?usp=sharing' target='_blank' rel='noopener noreferrer'>
                 <i class='fas fa-file-pdf'></i>
                 <span class='hide-on-small-only'>Resume</span>
               </a>
-              <a class='landBtn btn btn-large purple darken-2 col s3' href='https://linkedin.com/in/jontiritilli' target='_blank' rel='noopener noreferrer'>
+              <a class='landBtn btn btn-large purple darken-2 col s3 scale-transition scale-out' href='https://linkedin.com/in/jontiritilli' target='_blank' rel='noopener noreferrer'>
                 <i class='fab fa-linkedin'></i>
                 <span class='hide-on-small-only'>Connect</span>
               </a>
@@ -134,85 +134,107 @@
         </div>
       </div>
     </div>
-    <div class='parallax'><img src='assets/images/backgrounds/Background1.jpg' alt='background 1'></div>
+    <div class='parallax'><img src='assets/images/backgrounds/background2.jpg' alt='background 1'></div>
   </div>
   <div class='container' id='about'>
     <div class='section'>
       <div class='row'>
-        <div class='col s12 m6'>
+        <div class='col s12 center-align'>
           <div class='icon-block'>
-            <h2 class='center grey-text text-darken-3'><i class='material-icons'>person</i></h2>
-            <h5 class='center'>About Me</h5>
-            <div class='col s12 center-align'>
-              <img class='responsive-img circle me' src='assets/images/me_img.jpg' alt='Personal Picture'/>
+            <div class='icon-block'>
+              <div class='col s12 center-align self-image'>
+                <img class='responsive-img circle me' src='assets/images/me_img.jpg' alt='Personal Picture'/>
+              </div>
+              <h4 class='center'>About Me</h4>
             </div>
-            <p class='light'>
-              My name is Jonathan, and I'm a web developer. My professional journey has given me a unique viewpoint and the ability to interact particularly well in a variety of settings with clients and team members alike. I am proficient at time management and organization, which helps me write clean and concise code. I am passionate, devoted, hungry for knowledge, and looking for a new opportunity to grow my skills as a developer.
-            </p>
-            <div class="divider"></div>
-            <p>
-              I have always been an early adopter, and a constant tinkerer; running custom ROM's on my phones, and modifying programs to my liking. I found my passion for programming through my love of growth and innovation. I enjoy building and testing new technologies on a regular basis in my free-time. If I'm not writing/re-factoring code, I am with my wife, daughter, and new-born son. Everything I do, I do for them. We love Settlers of Catan, strategy games, Game of Thrones, Rick and Morty, Harry Potter, and everything else 'geeky'.
-            </p>
           </div>
         </div>
-
-        <div class='col s12 m6 abilities-section'>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <p class='light'>
+            My name is Jonathan, and I'm a web developer. I've always been an early adopter, and a constant tinkerer; running custom ROM's on my phones, modifying programs to my liking, and overclocking hardware. I found my passion for programming through my love of problem-solving and logic, combined with a desire to innovate.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <p class='light'>
+            If I'm not writing code or building websites, I am with my wife, daughter, and new-born son. Everything I do, I do for them. We love Settlers of Catan, strategy games and logic puzzles, Game of Thrones, Rick and Morty, Harry Potter, and everything else 'geeky'.
+            <!-- My professional journey has given me a unique viewpoint and the ability to interact particularly well in a variety of settings with clients and team members alike. I am proficient at time management and organization, which helps me write clean and concise code. I am passionate, devoted, hungry for knowledge, and looking for a new opportunity to grow my skills as a developer.  -->
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class='col s12'>
+          <p class='light'>
+            I write a lot JavaScript (jQuery, ReactJS, NodeJS), HTML, and CSS/SASS/SCSS. When it comes to development I often find myself pulled towards the front-end stack. Responsiveness, compatibility, and the psychology of design are my first thoughts when creating an application or website.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12">
+          <p class='light'>
+            Having an understanding of the functionality and implementation best practices of web servers, API's, and databases helps me create seamless experiences for the user.
+          </p>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col s12 abilities-section hide-on-small-only'>
           <div class='icon-block'>
-            <h2 class='center grey-text text-darken-3'><i class='material-icons'>power</i></h2>
-            <h5 class='center'>Skills</h5>
-            <div class='col s4 l3 center-align'>
+            <div class='col s4 m2 center-align'>
               <img class='skill' src='assets/images/devicons/javascript.svg'>
             </div>
-            <div class='col s4 l3 center-align'>
-              <img class='skill' src='assets/images/devicons/react.svg'>
-            </div>
-            <div class='col s4 l3 center-align'>
-              <img class='skill' src='assets/images/devicons/redux.svg'>
-            </div>
-            <div class='col s4 l3 center-align'>
+            <div class='col s4 m2 center-align'>
               <img class='skill' src='assets/images/devicons/html5.svg'>
             </div>
-            <div class='col s4 l3 center-align'>
+            <div class='col s4 m2 center-align'>
               <img class='skill' src='assets/images/devicons/css3.svg'>
             </div>
-            <div class='col s4 l3 center-align'>
-              <img class='skill' src='assets/images/devicons/jquery.svg'>
-            </div>
-            <div class='col s4 l3 center-align'>
+            <div class='col s4 m2 center-align'>
               <img class='skill' src='assets/images/devicons/nodejs.svg'>
             </div>
-            <div class='col s4 l3 center-align'>
+            <div class='col s4 m2 center-align'>
               <img class='skill' src='assets/images/devicons/express.svg'>
             </div>
-            <div class='col s4 l3 center-align'>
-              <img class='skill' src='assets/images/devicons/mysql.svg'>
+            <div class='col s4 m2 center-align'>
+              <img class='skill' src='assets/images/devicons/react.svg'>
             </div>
-            <div class='col s4 l3 center-align'>
-              <img class='skill' src='assets/images/devicons/mongoDB.svg'>
+            <div class='col s4 m2 center-align'>
+              <img class='skill' src='assets/images/devicons/redux.svg'>
             </div>
-            <div class='col s4 l3 center-align'>
+            <div class='col s4 m2 center-align'>
+              <img class='skill' src='assets/images/devicons/jquery.svg'>
+            </div>
+            <div class='col s4 m2 center-align'>
               <img class='skill' src='assets/images/devicons/pug.svg'>
             </div>
-            <div class='col s4 l3 center-align'>
+            <div class='col s4 m2 center-align'>
+              <img class='skill' src='assets/images/devicons/php.svg'>
+            </div>
+            <div class='col s4 m2 center-align'>
+              <img class='skill' src='assets/images/devicons/csharp.svg'>
+            </div>
+            <div class='col s4 m2 center-align'>
+              <img class='skill' src='assets/images/devicons/mysql.svg'>
+            </div>
+            <div class='col s4 m2 center-align'>
+              <img class='skill' src='assets/images/devicons/mongoDB.svg'>
+            </div>
+            <div class='col s4 m2 center-align'>
               <img class='skill' src='assets/images/devicons/github.svg'>
             </div>
-            <div class='col s4 l3 center-align'>
+            <div class='col s4 m2 center-align'>
               <img class='skill' src='assets/images/devicons/git.svg'>
             </div>
-            <div class='col s4 l3 center-align'>
+            <div class='col s4 m2 center-align'>
               <img class='skill' src='assets/images/devicons/aws.svg'>
             </div>
-            <div class='col s4 l3 center-align'>
+            <div class='col s4 m2 center-align'>
               <img class='skill' src='assets/images/devicons/apache.svg'>
             </div>
-            <div class='col s12'>
-              <p class='light'>
-                I write a lot JavaScript (jQuery, ReactJS, NodeJS), HTML, and CSS/SASS/SCSS. I find my passion in the creative and logical processes that go into creating performant functional and object-oriented Javascript. When it comes to development I often find myself pulled towards the front-end stack. Responsiveness, compatibility, and the psychology of design are often my first thoughts when creating an application or website. However, I have found it very beneficial to understand the functionality and implementation best practices of web servers, API's, and databases (such as MySQL/Mongo) to improve my integrations and create seamless experiences for the user.
-              </p>
-              <div class='divider'></div>
-              <p class='light'>
-                My process is focused and organized. I understand the importance of having accurate documentation, and writing clean, functional, bug-free code.
-              </p>
+            <div class='col s4 m2 center-align'>
+              <img class='skill' src='assets/images/devicons/NPM.svg'>
             </div>
           </div>
         </div>
@@ -229,36 +251,36 @@
           <h2 class='center grey-text text-darken-3'>
             <i class='material-icons'>view_carousel</i>
           </h2>
-          <h5 class='center'>Portfolio</h5>
+          <h4 class='center'>Portfolio</h4>
         </div>
       </div>
     </div>
     <div class='row'>
       <div class='col s12 m6'>
-        <h5 class='center'>Student Grade Manager</h5>
+        <p class='center project-title'>Student Grade Manager</p>
         <a target='blank' rel='noopener noreferrer' href='http://sgm.jonathantiritilli.com'>
           <img src='assets/images/SGM.jpg' alt='' class='responsive-img'>
         </a>
         <div class='col s6 center'>
-          <a target='blank' rel='noopener noreferrer' href='https://github.com/jontiritilli/student-grade-table'>GitHub</a>
+          <a class='project-link' target='blank' rel='noopener noreferrer' href='https://github.com/jontiritilli/student-grade-table'>GitHub</a>
         </div>
         <div class='col s6 center'>
-          <a target='blank' rel='noopener noreferrer' href='http://sgm.jonathantiritilli.com'>Live</a>
+          <a class='project-link' target='blank' rel='noopener noreferrer' href='http://sgm.jonathantiritilli.com'>Live</a>
         </div>
       </div>
       <div class='col s12 m6'>
-        <h5 class='center'>ArtisanDate</h5>
+        <p class='center project-title'>ArtisanDate</h5>
         <a target='blank' rel='noopener noreferrer' href='http://www.artisandate.com'>
           <img src='assets/images/artisandate.jpg' alt='' class='responsive-img'>
         </a>
         <div class='col s6 center'>
-          <a target='blank' rel='noopener noreferrer' href='https://github.com/Learning-Fuze/c12.17_datenight'>GitHub</a>
+          <a class='project-link' target='blank' rel='noopener noreferrer' href='https://github.com/Learning-Fuze/c12.17_datenight'>GitHub</a>
         </div>
         <div class='col s6 center'>
-          <a target='blank' rel='noopener noreferrer' href='http://www.artisandate.com'>Live</a>
+          <a class='project-link' target='blank' rel='noopener noreferrer' href='http://www.artisandate.com'>Live</a>
         </div>
       </div>
-      <div class='col s12 m6'>
+      <!-- <div class='col s12 m6'>
         <h5 class='center'>Calculator</h5>
         <a target='blank' rel='noopener noreferrer' href='https://calculator.jonathantiritilli.com'>
           <img src='assets/images/calculator.jpg' alt='' class='responsive-img'>
@@ -269,29 +291,29 @@
         <div class='col s6 center'>
           <a target='blank' rel='noopener noreferrer' href='https://calculator.jonathantiritilli.com'>Live</a>
         </div>
-      </div>
+      </div> -->
       <div class='col s12 m6'>
-        <h5 class='center'>JST Real Estate</h5>
+        <p class='center project-title'>JST Real Estate</h5>
         <a target='blank' rel='noopener noreferrer' href='https://jstrealestate.com'>
           <img src='assets/images/jst.jpg' alt='' class='responsive-img'>
         </a>
         <div class='col s6 center'>
-          <a target='blank' rel='noopener noreferrer' href='https://github.com/jontiritilli/jstwebsite'>GitHub</a>
+          <a class='project-link' target='blank' rel='noopener noreferrer' href='https://github.com/jontiritilli/jstwebsite'>GitHub</a>
         </div>
         <div class='col s6 center'>
-          <a target='blank' rel='noopener noreferrer' href='https://jstrealestate.com'>Live</a>
+          <a class='project-link' target='blank' rel='noopener noreferrer' href='https://jstrealestate.com'>Live</a>
         </div>
       </div>
       <div class='col s12 m6'>
-        <h5 class='center'>Reactive Weather</h5>
+        <p class='center project-title'>Reactive Weather</h5>
         <a target='blank' rel='noopener noreferrer' href='http://weather.jonathantiritilli.com'>
           <img src='assets/images/weather.jpg' alt='' class='responsive-img'>
         </a>
         <div class='col s6 center'>
-          <a target='blank' rel='noopener noreferrer' href='https://github.com/jontiritilli/react_weather_app'>GitHub</a>
+          <a class='project-link' target='blank' rel='noopener noreferrer' href='https://github.com/jontiritilli/react_weather_app'>GitHub</a>
         </div>
         <div class='col s6 center'>
-          <a target='blank' rel='noopener noreferrer' href='http://weather.jonathantiritilli.com'>Live</a>
+          <a class='project-link' target='blank' rel='noopener noreferrer' href='http://weather.jonathantiritilli.com'>Live</a>
         </div>
       </div>
     </div>
@@ -312,27 +334,34 @@
         </div>
       </div>
       <div class='row'>
-        <div class='col s4 center-align'>
-          <a class='blue-text text-darken-2' href='mailto:JonTiritilli@gmail.com'>
-            <p>Email Me</p>
-            <i class='material-icons contact-icon'>email</i>
-          </a>
+        <div class="col s12 hide-on-med-and-up">
+          <div class="row">
+            <div class='col s4 center-align'>
+              <a class='purple-text text-darken-2' href='sms:951-282-7630'>
+                <p>Text Me</p>
+                <i class='material-icons contact-icon'>mode_comment</i>
+              </a>
+            </div>
+            <div class='col s4 center-align'>
+              <a class='green-text text-darken-2' href='tel:951-282-7630'>
+                <p>Call Me</p>
+                <i class='material-icons contact-icon'>phone_iphone</i>
+              </a>
+            </div>
+            <div class='col s4 center-align'>
+              <a class='blue-text text-darken-2' href='mailto:JonTiritilli@gmail.com'>
+                <p>Email Me</p>
+                <i class='material-icons contact-icon'>email</i>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class='col s4 center-align'>
-          <a class='green-text text-darken-2' href='tel:951-282-7630'>
-            <p>Call Me</p>
-            <i class='material-icons contact-icon'>phone_iphone</i>
-          </a>
-        </div>
-        <div class='col s4 center-align'>
-          <a class='purple-text text-darken-2' href='sms:951-282-7630'>
-            <p>Text Me</p>
-            <i class='material-icons contact-icon'>mode_comment</i>
-          </a>
-        </div>
-      </div>
-      <div class='row'>
-        <form class='col s12 contactForm'>
+        <form class='col s12 m8 contactForm'>
+          <div class="row">
+            <div class="col s12 raleway center">
+              Send me a quick note
+            </div>
+          </div>
           <div class='row'>
             <div class='input-field col s6'>
               <input name='name' type='text' class='validate'>
@@ -366,6 +395,32 @@
             </div>
           </div>
         </form>
+        <div class="col m3 offset-m1 hide-on-small-only">
+          <div class="row">
+            <div class='col s12 center-align'>
+              <a class='purple-text text-darken-2' href='sms:951-282-7630'>
+                <p>Text Me</p>
+                <i class='material-icons contact-icon'>mode_comment</i>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class='col s12 center-align'>
+              <a class='green-text text-darken-2' href='tel:951-282-7630'>
+                <p>Call Me</p>
+                <i class='material-icons contact-icon'>phone_iphone</i>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class='col s12 center-align'>
+              <a class='blue-text text-darken-2' href='mailto:JonTiritilli@gmail.com'>
+                <p>Email Me</p>
+                <i class='material-icons contact-icon'>email</i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -399,7 +454,7 @@
       </div>
     </div>
   </footer>
-  <div class='btn red darken-3' id='topBtn'>Top</div>
+  <div class='btn red darken-3 scale-transition scale-out' id='topBtn'>Top</div>
   <div id='modal' class='modal'>
       <div class='modal-content'>
           <div class='row'>
@@ -415,7 +470,7 @@
   </div>
 
   <!--  Scripts  -->
-  <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' crossorigin='anonymous'></script>
+  <script src='js/jquery-3.3.1.min.js'></script>
   <script src='js/validate.min.js'></script>
   <script src='js/materialize.min.js'></script>
   <script src='js/init.js'></script>

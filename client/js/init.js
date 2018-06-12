@@ -16,9 +16,10 @@
     $('.parallax').parallax();
     //deploy modals
     $('.modal').modal();
-    $('.navBtn').on('click', ()=>{
-      scrollAndHide(event.target.id);
+    $('.navBtn').on('click', (event)=>{
+      scrollAndHide($(event.target).attr('scrolltarget'));
     });
+    $('.landBtn').removeClass('scale-out');
     $('.sendBtn').on('click', () => {
       sendTrying();
       sendMail();
@@ -66,20 +67,21 @@
 })(jQuery); // end of jQuery name space
   function addTopBtn(){
     if (window.scrollY > 65) {
-      return document.getElementById('topBtn').style.display = "block";
+      return $('#topBtn').removeClass('scale-out');
     }
-    document.getElementById('topBtn').style.display = "none";
+      $('#topBtn').addClass('scale-out');
   }
   function topFunction() {
     $('html, body').animate({
       scrollTop: $(`body`).offset().top
     }, 750);
   }
-  function scrollAndHide(targetId){
+  function scrollAndHide(target){
     closeSideNav();
-    if(targetId){
+    if(target){
+      console.log('clicked')
       $('html, body').animate({
-        scrollTop: $(targetId).offset().top
+        scrollTop: $(target).offset().top
       }, 750);
     }
   }

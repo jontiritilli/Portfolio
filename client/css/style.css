@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'raleway';
+  src: url('../assets/fonts/raleway/Raleway-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'raleway-bold';
+  src: url('../assets/fonts/raleway/Raleway-Medium.ttf') format('truetype');
+}
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -64,24 +72,25 @@ footer.page-footer {
     margin-top: 6px;
   }
 }
-
-.name {
-      text-shadow: 1px 1px 12px rgba(0,0,0,.6),
-      -1px -1px 12px rgba(0,0,0,.6),
-      -1px 1px 12px rgba(0,0,0,.6),
-      1px -1px 12px rgba(0,0,0,.6)
+.project-link {
+  font-family: raleway-bold;
+  font-size: 15px;
+  color: blue;
 }
-
+.project-title {
+  font-family: 'raleway';
+  font-size: 20px;
+  font-weight: 600;
+}
+.billboardShadow {
+      text-shadow: -1px -1px 12px rgba(0,0,0,0.2);
+}
 .title {
   font-size: 2rem;
-  text-shadow: 1px 1px 12px rgba(0,0,0,.6),
-  -1px -1px 12px rgba(0,0,0,.6),
-  -1px 1px 12px rgba(0,0,0,.6),
-  1px -1px 12px rgba(0,0,0,.6)
 }
 
 .skill {
-  width: 100%;
+  width: 50%;
   margin-top: 15%;
 }
 
@@ -122,7 +131,12 @@ input:-webkit-autofill:active {
   left: 0px;
 }
 img.me {
-  width: 75%;
+  width: 25%;
+}
+@media (max-width: 600px){
+  img.me {
+    width: 55%;
+  }
 }
 .container a {
   display: block;
@@ -160,8 +174,11 @@ p {
 .contact-icon {
   font-size: 35px;
 }
+.raleway {
+  font-family: 'raleway';
+  font-size: 20px;
+}
 #topBtn {
-  display: none;
   position: fixed;
   bottom: 40px;
   right: 30px;
