@@ -347,16 +347,16 @@ footer a .fas {
 	opacity: 0;
 }
 
-.grid figure h3 {
+.grid figure h4 {
 	word-spacing: -0.15em;
 	font-weight: 300;
 }
 
-.grid figure h3 span {
+.grid figure h4 span {
 	font-weight: 800;
 }
 
-.grid figure h3,
+.grid figure h4,
 .grid figure p {
 	margin: 0;
 }
@@ -395,7 +395,7 @@ figure.effect-winston figcaption::before {
   transform-origin: 0 100%;
 }
 
-figure.effect-winston h3 {
+figure.effect-winston h4 {
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,20px,0);
@@ -433,7 +433,7 @@ figure.effect-winston:hover img {
 	opacity: 0.6;
 }
 
-figure.effect-winston:hover h3 {
+figure.effect-winston:hover h4 {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
