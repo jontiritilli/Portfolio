@@ -63,6 +63,7 @@
 
       }, 'xml');
     });
+    appendContactInfo($);
   }); // end of document ready
 })(jQuery); // end of jQuery name space
   function addTopBtn(){
@@ -110,7 +111,11 @@
       }
     })
   }
-
+  function appendContactInfo($) {
+    $('#text-number').attr('href', 'sms:951-282-7630');
+    $('#call-number').attr('href', 'tel:951-282-7630');
+    $('#contact-email').attr('href', 'mailto:JonTiritilli@gmail.com');
+  }
   function validate (){
     $(".contactForm").validate({
       rules: {
