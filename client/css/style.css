@@ -137,6 +137,9 @@ img.me {
     width: 55%;
   }
 }
+.container#about {
+  position: relative;
+}
 .container a {
   display: block;
 }
