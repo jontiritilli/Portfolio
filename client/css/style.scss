@@ -1,0 +1,373 @@
+@import "./variables.scss";
+// fonts
+@font-face {
+  src: url("../assets/fonts/BebasNeue-Light.ttf");
+  font-family: "bebas-light";
+}
+@font-face {
+  src: url("../assets/fonts/BebasNeue-Regular.ttf");
+  font-family: "bebas";
+}
+
+@font-face {
+  src: url("../assets/fonts/OperatorMonoLig-Medium.otf");
+  font-family: "mono";
+}
+.bebas {
+  font-family: "bebas", sans-serif;
+}
+.bebas-light {
+  font-family: "bebas-light", sans-serif;
+}
+.mono {
+  font-family: "Mono", monospace;
+}
+// colors
+.yellow {
+  background: $color-yellow-0 !important;
+}
+.red {
+  background: $color-red-0 !important;
+}
+.red-lighten {
+  background: $color-red-2 !important;
+}
+.purple {
+  background: $color-purple-0 !important;
+}
+.green {
+  background: $color-green-0 !important;
+}
+.white {
+  background: $color-white-1 !important;
+}
+// set body and html presets
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+// placeholder
+::placeholder {
+  font-family: Mono;
+  color: $color-white-1
+}
+// remove scrollbar
+::-webkit-scrollbar { width: 0 !important }
+
+// navigation styling
+.mobile-nav-button {
+  display: flex;
+  position: absolute;
+  top: 28px;
+  right: 15px;
+  flex-direction: column;
+  width: 30px;
+  height: 30px;
+  span.bar {
+    width: 100%;
+    margin: auto;
+    height: 2px;
+    background: black;
+  }
+}
+.nav-wrapper {
+  display: flex;
+  position: relative;
+  background: $color-white-0;
+  justify-content: space-between;
+  height: $height-nav-full;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 1;
+  .brand {
+    display: inherit;
+    .logo {
+      height: 100%;
+    }
+  }
+  .header-nav {
+    display: none;
+  }
+  @media only screen and (min-width: 715px) {
+    .mobile-nav-wrapper {
+      display: none;
+    }
+    .mobile-nav-button {
+      display: none;
+    }
+    .header-nav {
+      display: inherit;
+      margin-right: 10px;
+      font-family: bebas;
+      ul {
+        display: inherit;
+        flex-direction: row;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          display: inherit;
+          justify-content: center;
+          align-items: center;
+          margin: 15px;
+          &:hover {
+            cursor: pointer;
+            margin: 13px;
+            border: 2px black solid;
+          }
+          a {
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            &:hover {
+              text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// forms
+form {
+  .flex-outer,
+  .flex-inner {
+    list-style-type: none;
+    padding: 0;
+    color: $color-white-1;
+    font-size: 1.4rem;
+  }
+  .flex-outer {
+    max-width: 800px;
+    margin: 0 auto;
+    li input,
+    li textarea {
+      padding: 15px;
+      color: $color-white-1;
+      font-family: Mono;
+      font-size: 1.4rem;
+      background: none;
+      border-style: solid;
+      border-color: $color-white-1;
+      border-width: 0 0 3px 0;
+      &:focus {
+        outline: none;
+      }
+    }
+    li {
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .flex-outer li,
+  .flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: Mono;
+  }
+
+  .flex-inner {
+    padding: 0 8px;
+    justify-content: space-between;
+    li {
+      width: 100px;
+    }
+  }
+
+  .flex-outer > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .flex-outer li label,
+  .flex-outer li p {
+    padding: 8px;
+    letter-spacing: .09em;
+  }
+
+  .flex-outer > li > label,
+  .flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+  }
+
+  .flex-outer > li > label + *,
+  .flex-inner {
+    flex: 1 0 220px;
+  }
+
+  .flex-outer li button {
+    margin-left: auto;
+    border: none;
+    background: $color-purple-0;
+    letter-spacing: .09em;
+  }
+}
+// anchor
+a {
+  text-decoration: none;
+  color: $color-purple-0;
+}
+// button
+button, .btn {
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+  background: white;
+  transition: .3s;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 12px rgba(0,0,0,.6);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+#top-btn {
+  background: $color-yellow-4;
+  position: absolute;
+  opacity: 1;
+  transform: scale(1);
+  right: 10px;
+  bottom: 10px;
+  transition: .3s;
+  &.scale-out {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+// cards
+.card {
+  font-family: Mono;
+  width: 100%;
+  min-height: 105vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  @media only screen and (min-width: 715px) {
+    height: 105vh;
+    &.short {
+      height: 52.5vh;
+      min-height: 52.5vh;
+    }
+  }
+  // @media only screen and (min-height: 600px) {
+  //   &.short {
+  //     height: 52.5vh;
+  //   }
+  // }
+  &.about {
+    background: $color-white-1;
+  }
+  &.contact {
+    background: $color-white-0;
+  }
+}
+.half-card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  min-height: 52.5vh;
+  font-family: Mono;
+}
+@media only screen and (min-width: 715px) {
+  .half-card {
+    width: 50%;
+    height: 100%;
+  }
+}
+// container
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  .form {
+    margin: 20px auto;
+  }
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  .underscore {
+    width: 20%;
+    height: 0.3rem;
+    background: black;
+    &.dark {
+      background: $color-white-0
+    }
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  @media only screen and
+  (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    p {
+      font-size: 20px;
+    }
+  }
+  .icon-large {
+    display: inline-block;
+    font-size: 4rem;
+    margin: 30px 25px;
+    color: $color-red-3;
+  }
+}
+// alignment
+.right-align {
+  justify-content: flex-end !important;
+}
+.center-align {
+  justify-content: center !important;
+}
+.right-align {
+  justify-content: flex-start !important;
+}
+.top-align {
+  align-items: flex-start !important;
+}
+.row {
+  flex-direction: row;
+}
+// text
+.dark {
+  color: $color-white-0;
+}
+// weather-pill
+.weather-pill {
+  display: inline-flex;
+  position: absolute;
+  padding: 5px 15px;
+  top: 0;
+  margin-top: 3%;
+  left: 0;
+  background: $color-purple-3 !important;
+  border-radius: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 5vw;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, .5);
+}
+@media screen and (min-width: 751px) {
+  .weather-pill {
+     font-size: 28px;
+  }
+}
