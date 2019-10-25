@@ -72,7 +72,6 @@
     }, 750);
   }
   function scrollAndHide(target){
-    console.log("scroll and hide", "target", target);
     if(target){
       $('html, body').animate({
         scrollTop: $(target).offset().top
