@@ -1,0 +1,157 @@
+@import "./variables.scss";
+@font-face {
+  src: url("../assets/fonts/BebasNeue-Light.ttf");
+  font-family: "bebas-light";
+}
+@font-face {
+  src: url("../assets/fonts/BebasNeue-Regular.ttf");
+  font-family: "bebas";
+}
+
+@font-face {
+  src: url("../assets/fonts/OperatorMonoLig-Medium.otf");
+  font-family: "mono";
+}
+.bebas {
+  font-family: "bebas", sans-serif;
+}
+.bebas-light {
+  font-family: "bebas-light", sans-serif;
+}
+.mono {
+  font-family: "Mono", monospace;
+}
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+::-webkit-scrollbar { width: 0 !important }
+.mobile-nav-button {
+  display: flex;
+  position: absolute;
+  top: 28px;
+  right: 15px;
+  flex-direction: column;
+  width: 30px;
+  height: 30px;
+
+  span.bar {
+    width: 100%;
+    margin: auto;
+    height: 2px;
+    color: black;
+  }
+}
+.nav-wrapper {
+  display: flex;
+  position: relative;
+  background: $color-white-0;
+  justify-content: space-between;
+  height: $height-nav-full;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 1;
+  .brand {
+    display: inherit;
+    .logo {
+      height: 100%;
+    }
+  }
+  .header-nav {
+    display: none;
+  }
+  .mobile-nav {
+
+  }
+  @media only screen and (min-width: 715px) {
+    .mobile-nav-wrapper {
+      display: none;
+    }
+    .mobile-nav-button {
+      display: none;
+    }
+    .header-nav {
+      display: inherit;
+      margin-right: 10px;
+      font-family: bebas;
+      ul {
+        display: inherit;
+        flex-direction: row;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          display: inherit;
+          justify-content: center;
+          align-items: center;
+          margin: 15px;
+          &:hover {
+            cursor: pointer;
+            margin: 13px;
+            border: 2px black solid;
+          }
+          a {
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            &:hover {
+              text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.card {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  &.introduction {
+    background: $color-white-0;
+  }
+  &.project-1 {
+    background: $color-yellow-0;
+  }
+  &.project-2 {
+    background: $color-green-0;
+  }
+  &.project-3 {
+    background: $color-purple-0;
+  }
+  &.project-4 {
+    background: $color-red-0;
+  }
+  &.about {
+    background: $color-white-1;
+  }
+  &.contact {
+    background: $color-white-0;
+  }
+}
+
+.text-card {
+  width: 450px;
+  margin: 50px;
+  font-family: Mono;
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}
+.introduction {
+  display: flex;
+  align-items: center;
+}
