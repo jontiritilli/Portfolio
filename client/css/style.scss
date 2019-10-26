@@ -22,6 +22,12 @@
 .mono {
   font-family: "Mono", monospace;
 }
+// helpers
+.hide-on-mobile {
+  @media screen and (max-device-width: 715px) {
+    display: none;
+  }
+}
 // colors
 .yellow {
   background: $color-yellow-0 !important;
@@ -42,6 +48,9 @@
   background: $color-white-1 !important;
 }
 // set body and html presets
+* {
+  box-sizing: border-box;
+}
 body,
 html {
   padding: 0;
@@ -60,24 +69,10 @@ html {
   color: $color-white-1
 }
 // remove scrollbar
-::-webkit-scrollbar { width: 0 !important }
-
-// navigation styling
-.mobile-nav-button {
-  display: flex;
-  position: absolute;
-  top: 28px;
-  right: 15px;
-  flex-direction: column;
-  width: 30px;
-  height: 30px;
-  span.bar {
-    width: 100%;
-    margin: auto;
-    height: 2px;
-    background: black;
-  }
+::-webkit-scrollbar {
+  width: 0 !important
 }
+
 // brand/logo
 .branded {
   position: relative;
@@ -88,7 +83,7 @@ html {
     left: 10px;
     max-width: 200px;
     @media screen and (max-device-width: 600px) {
-      max-height: 175px;
+      max-width: 150px;
     }
     .logo {
       position: relative;
@@ -173,12 +168,12 @@ form {
     letter-spacing: .09em;
   }
 }
-// anchor
+// anchors
 a {
   text-decoration: none;
   color: $color-purple-0;
 }
-// button
+// buttons
 button, .btn {
   border: none;
   cursor: pointer;
@@ -194,40 +189,39 @@ button, .btn {
   &:focus {
     outline: none;
   }
-}
-#top-btn {
-  background: $color-yellow-4;
-  position: absolute;
-  opacity: 1;
-  transform: scale(1);
-  right: 10px;
-  bottom: 10px;
-  transition: $transition-speed;
-  &.scale-out {
-    transform: scale(0);
-    opacity: 0;
+  &#top-btn {
+    background: $color-yellow-4;
+    position: absolute;
+    opacity: 1;
+    transform: scale(1);
+    right: 10px;
+    bottom: 10px;
+    transition: $transition-speed;
+    &.scale-out {
+      transform: scale(0);
+      opacity: 0;
+    }
   }
 }
 // cards
 .card {
   font-family: Mono;
   width: 100%;
-  min-height: 105vh;
+  min-height: $height-card;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  &.short {
+    height: $height-card-half;
+    min-height: $height-card-half;
+  }
   @media only screen and (min-width: 715px) {
-    height: 105vh;
+    height: $height-card;
     &.short {
-      height: 52.5vh;
-      min-height: 52.5vh;
+      height: $height-card-half;
+      min-height: $height-card-half;
     }
   }
-  // @media only screen and (min-height: 600px) {
-  //   &.short {
-  //     height: 52.5vh;
-  //   }
-  // }
   &.about {
     background: $color-white-1;
   }
@@ -240,7 +234,7 @@ button, .btn {
   align-items: center;
   width: 100%;
   height: 50%;
-  min-height: 52.5vh;
+  min-height: $height-card-half;
   font-family: Mono;
 }
 @media only screen and (min-width: 715px) {
@@ -248,6 +242,13 @@ button, .btn {
     width: 50%;
     height: 100%;
   }
+}
+// iframe
+iframe {
+  width: 100%;
+  height: 100%;
+  min-height: $height-card-half;
+  border: none;
 }
 // container
 .container {
@@ -257,6 +258,11 @@ button, .btn {
   .form {
     margin: 20px auto;
   }
+}
+.portfolio-container {
+  width: 100%;
+  height: 100%;
+  min-height: $height-card-half;
 }
 .text-container {
   display: flex;
@@ -301,6 +307,11 @@ button, .btn {
       color: $color-red-3
     }
   }
+}
+.portfolio-divider {
+  height: 5vh;
+  width: 100%;
+  color: $color-white-0;
 }
 // alignment
 .right-align {
