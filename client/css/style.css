@@ -84,63 +84,24 @@ html {
   background: black;
 }
 
-.nav-wrapper {
-  display: flex;
+.branded {
   position: relative;
-  background: #ffffff;
-  justify-content: space-between;
-  height: 62px;
-  width: 100%;
-  padding: 10px 0;
-  z-index: 1;
 }
-.nav-wrapper .brand {
+.branded .brand {
   display: inherit;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  max-width: 200px;
 }
-.nav-wrapper .brand .logo {
-  height: 100%;
+@media screen and (max-device-width: 600px) {
+  .branded .brand {
+    max-height: 175px;
+  }
 }
-.nav-wrapper .header-nav {
-  display: none;
-}
-@media only screen and (min-width: 715px) {
-  .nav-wrapper .mobile-nav-wrapper {
-    display: none;
-  }
-  .nav-wrapper .mobile-nav-button {
-    display: none;
-  }
-  .nav-wrapper .header-nav {
-    display: inherit;
-    margin-right: 10px;
-    font-family: bebas;
-  }
-  .nav-wrapper .header-nav ul {
-    display: inherit;
-    flex-direction: row;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .nav-wrapper .header-nav ul li {
-    display: inherit;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-  }
-  .nav-wrapper .header-nav ul li:hover {
-    cursor: pointer;
-    margin: 13px;
-    border: 2px black solid;
-  }
-  .nav-wrapper .header-nav ul li a {
-    text-decoration: none;
-    color: black;
-    padding: 5px;
-  }
-  .nav-wrapper .header-nav ul li a:hover {
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
-  }
+.branded .brand .logo {
+  position: relative;
+  width: 100%;
 }
 
 form .flex-outer,
@@ -159,7 +120,7 @@ form .flex-outer li textarea {
   padding: 15px;
   color: #f5f7ef;
   font-family: Mono;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   background: none;
   border-style: solid;
   border-color: #f5f7ef;
@@ -222,7 +183,7 @@ button, .btn {
   font-size: 1.5rem;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   background: white;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 button:hover, .btn:hover {
   transform: scale(1.05);
@@ -239,7 +200,7 @@ button:focus, .btn:focus {
   transform: scale(1);
   right: 10px;
   bottom: 10px;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 #top-btn.scale-out {
   transform: scale(0);
@@ -322,6 +283,14 @@ button:focus, .btn:focus {
   display: inline-block;
   font-size: 4rem;
   margin: 30px 25px;
+  color: #000000;
+  transition: 0.1s;
+}
+.text-container .icon-large:hover {
+  transform: scale(1.05);
+  text-shadow: 3px 2px 8px rgba(0, 0, 0, 0.2);
+}
+.text-container .icon-large:visited {
   color: #B30900;
 }
 
