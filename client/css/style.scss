@@ -262,6 +262,9 @@ button, .btn {
   display: flex;
   flex-direction: column;
   padding: 15px;
+  &.branded {
+    padding-top: 62px;
+  }
   .underscore {
     width: 20%;
     height: 0.3rem;

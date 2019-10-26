@@ -260,6 +260,9 @@ button:focus, .btn:focus {
   flex-direction: column;
   padding: 15px;
 }
+.text-container.branded {
+  padding-top: 62px;
+}
 .text-container .underscore {
   width: 20%;
   height: 0.3rem;
