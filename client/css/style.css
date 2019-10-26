@@ -28,6 +28,14 @@
   }
 }
 
+.text-black {
+  color: #000000 !important;
+}
+
+.text-yellow {
+  color: #DED50A !important;
+}
+
 .yellow {
   background: #DED50A !important;
 }
