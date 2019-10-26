@@ -78,61 +78,21 @@ html {
     background: black;
   }
 }
-.nav-wrapper {
-  display: flex;
+// brand/logo
+.branded {
   position: relative;
-  background: $color-white-0;
-  justify-content: space-between;
-  height: $height-nav-full;
-  width: 100%;
-  padding: 10px 0;
-  z-index: 1;
   .brand {
     display: inherit;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-width: 200px;
+    @media screen and (max-device-width: 600px) {
+      max-height: 175px;
+    }
     .logo {
-      height: 100%;
-    }
-  }
-  .header-nav {
-    display: none;
-  }
-  @media only screen and (min-width: 715px) {
-    .mobile-nav-wrapper {
-      display: none;
-    }
-    .mobile-nav-button {
-      display: none;
-    }
-    .header-nav {
-      display: inherit;
-      margin-right: 10px;
-      font-family: bebas;
-      ul {
-        display: inherit;
-        flex-direction: row;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        li {
-          display: inherit;
-          justify-content: center;
-          align-items: center;
-          margin: 15px;
-          &:hover {
-            cursor: pointer;
-            margin: 13px;
-            border: 2px black solid;
-          }
-          a {
-            text-decoration: none;
-            color: black;
-            padding: 5px;
-            &:hover {
-              text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
-            }
-          }
-        }
-      }
+      position: relative;
+      width: 100%;
     }
   }
 }
@@ -153,7 +113,7 @@ form {
       padding: 15px;
       color: $color-white-1;
       font-family: Mono;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       background: none;
       border-style: solid;
       border-color: $color-white-1;
@@ -226,7 +186,7 @@ button, .btn {
   font-size: 1.5rem;
   box-shadow: 2px 2px 8px rgba(0,0,0,.5);
   background: white;
-  transition: .3s;
+  transition: $transition-speed;
   &:hover {
     transform: scale(1.05);
     box-shadow: 4px 4px 12px rgba(0,0,0,.6);
@@ -242,7 +202,7 @@ button, .btn {
   transform: scale(1);
   right: 10px;
   bottom: 10px;
-  transition: .3s;
+  transition: $transition-speed;
   &.scale-out {
     transform: scale(0);
     opacity: 0;
@@ -328,7 +288,15 @@ button, .btn {
     display: inline-block;
     font-size: 4rem;
     margin: 30px 25px;
-    color: $color-red-3;
+    color: $color-black-0;
+    transition: $transition-speed;
+    &:hover {
+      transform: scale(1.05);
+      text-shadow: 3px 2px 8px $color-text-shadow;
+    }
+    &:visited {
+      color: $color-red-3
+    }
   }
 }
 // alignment
