@@ -22,12 +22,6 @@
 .mono {
   font-family: "Mono", monospace;
 }
-// helpers
-.hide-on-mobile {
-  @media screen and (max-device-width: 715px) {
-    display: none;
-  }
-}
 // colors
 .text-black {
   color: $color-black-0 !important
@@ -218,10 +212,9 @@ button, .btn {
   flex-wrap: wrap;
   align-items: center;
   &.short {
-    height: $height-card-half;
     min-height: $height-card-half;
   }
-  @media only screen and (min-width: 715px) {
+  @media only screen and (min-device-width: 813px) {
     height: $height-card;
     &.short {
       height: $height-card-half;
@@ -234,6 +227,11 @@ button, .btn {
   &.contact {
     background: $color-white-0;
   }
+  .footnote {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+  }
 }
 .half-card {
   display: flex;
@@ -243,10 +241,10 @@ button, .btn {
   min-height: $height-card-half;
   font-family: Mono;
 }
-@media only screen and (min-width: 715px) {
+@media only screen and (min-device-width: 812px) {
   .half-card {
     width: 50%;
-    height: 100%;
+    min-height: 100vh;
   }
 }
 // iframe
@@ -255,6 +253,9 @@ iframe {
   height: 100%;
   min-height: $height-card-half;
   border: none;
+  @media screen and (min-device-width: 812px) {
+    min-height: 100vh;
+  }
 }
 // container
 .container {
@@ -269,6 +270,9 @@ iframe {
   width: 100%;
   height: 100%;
   min-height: $height-card-half;
+  @media screen and (min-device-width: 812px) {
+    min-height: 100vh;
+  }
 }
 .text-container {
   display: flex;
@@ -276,6 +280,9 @@ iframe {
   padding: 15px;
   &.branded {
     padding-top: 62px;
+    @media screen and (min-device-width: 812px) {
+      padding-top: 15px;
+    }
   }
   .underscore {
     width: 20%;
@@ -358,4 +365,14 @@ iframe {
   .weather-pill {
      font-size: 28px;
   }
+}
+
+// helpers
+.hide-on-mobile {
+  @media screen and (max-device-width: 812px) {
+    display: none !important;
+  }
+}
+.relative {
+  position: relative;
 }

@@ -22,12 +22,6 @@
   font-family: "Mono", monospace;
 }
 
-@media screen and (max-device-width: 715px) {
-  .hide-on-mobile {
-    display: none;
-  }
-}
-
 .text-black {
   color: #000000 !important;
 }
@@ -217,10 +211,9 @@ button#top-btn.scale-out, .btn#top-btn.scale-out {
   align-items: center;
 }
 .card.short {
-  height: 50vh;
   min-height: 50vh;
 }
-@media only screen and (min-width: 715px) {
+@media only screen and (min-device-width: 813px) {
   .card {
     height: 100vh;
   }
@@ -235,6 +228,11 @@ button#top-btn.scale-out, .btn#top-btn.scale-out {
 .card.contact {
   background: #ffffff;
 }
+.card .footnote {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
 
 .half-card {
   display: flex;
@@ -245,10 +243,10 @@ button#top-btn.scale-out, .btn#top-btn.scale-out {
   font-family: Mono;
 }
 
-@media only screen and (min-width: 715px) {
+@media only screen and (min-device-width: 812px) {
   .half-card {
     width: 50%;
-    height: 100%;
+    min-height: 100vh;
   }
 }
 iframe {
@@ -256,6 +254,11 @@ iframe {
   height: 100%;
   min-height: 50vh;
   border: none;
+}
+@media screen and (min-device-width: 812px) {
+  iframe {
+    min-height: 100vh;
+  }
 }
 
 .container {
@@ -272,6 +275,11 @@ iframe {
   height: 100%;
   min-height: 50vh;
 }
+@media screen and (min-device-width: 812px) {
+  .portfolio-container {
+    min-height: 100vh;
+  }
+}
 
 .text-container {
   display: flex;
@@ -280,6 +288,11 @@ iframe {
 }
 .text-container.branded {
   padding-top: 62px;
+}
+@media screen and (min-device-width: 812px) {
+  .text-container.branded {
+    padding-top: 15px;
+  }
 }
 .text-container .underscore {
   width: 20%;
@@ -364,6 +377,15 @@ iframe {
   .weather-pill {
     font-size: 28px;
   }
+}
+@media screen and (max-device-width: 812px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+.relative {
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
