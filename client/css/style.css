@@ -90,9 +90,9 @@ html {
   left: 10px;
   max-width: 200px;
 }
-@media screen and (max-device-width: 600px) {
+@media screen and (max-device-width: 811px) {
   .branded .brand {
-    max-width: 150px;
+    display: none;
   }
 }
 .branded .brand .logo {
