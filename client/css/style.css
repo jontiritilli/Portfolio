@@ -190,7 +190,7 @@ button.neumorphic, .btn.neumorphic {
 button.neumorphic.yellow, .btn.neumorphic.yellow {
   box-shadow: 4px 3px 13px #cec50a, -4px -3px 11px #deff57;
   box-shadow: 4px 3px 13px #cec50a, -4px -3px 11px #deff57;
-  border-color: #fbfbfb;
+  border-color: #ffffff36;
   border-width: 1px 0px 0px 1px;
   border-style: solid;
   background: #DED50A;
@@ -212,7 +212,7 @@ button.neumorphic.green.pressed, .btn.neumorphic.green.pressed {
 }
 button.neumorphic.white, .btn.neumorphic.white {
   box-shadow: 2px 2px 8px #e8e8e8, -2px -2px 8px #f5f7ef;
-  border-color: #ffffff36;
+  border-color: #fbfbfb;
   border-width: 1px 0px 0px 1px;
   border-style: solid;
   background: #f5f7ef;

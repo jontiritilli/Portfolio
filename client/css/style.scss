@@ -188,7 +188,7 @@ button, .btn {
     border-radius: 10px;
     &.yellow {
       box-shadow: 4px 3px 13px $button-shadow-yellow-dark, -4px -3px 11px $button-shadow-yellow-light;box-shadow: 4px 3px 13px #cec50a, -4px -3px 11px #deff57;
-      border-color: #fbfbfb;
+      border-color: #ffffff36;
       border-width: 1px 0px 0px 1px;
       border-style: solid;
       background: $color-yellow-0;
@@ -210,7 +210,7 @@ button, .btn {
     }
     &.white {
       box-shadow: 2px 2px 8px $button-shadow-white-dark, -2px -2px 8px $button-shadow-white-light;
-      border-color: #ffffff36;
+      border-color: #fbfbfb;
       border-width: 1px 0px 0px 1px;
       border-style: solid;
       background: $color-white-1;
