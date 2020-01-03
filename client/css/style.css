@@ -30,6 +30,10 @@
   color: #DED50A !important;
 }
 
+.text-purple {
+  color: #581095 !important;
+}
+
 .yellow {
   background: #DED50A !important;
 }
@@ -162,14 +166,13 @@ form .flex-inner {
 }
 form .flex-outer li button {
   margin-left: auto;
-  border: none;
-  background: #581095;
   letter-spacing: 0.09em;
 }
 
 a {
   text-decoration: none;
   color: #581095;
+  cursor: pointer;
 }
 
 button, .btn {
@@ -181,9 +184,42 @@ button, .btn {
   background: white;
   transition: 0.1s;
 }
-button:hover, .btn:hover {
-  transform: scale(1.05);
-  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
+button.neumorphic, .btn.neumorphic {
+  border-radius: 10px;
+}
+button.neumorphic.yellow, .btn.neumorphic.yellow {
+  box-shadow: 4px 3px 13px #cec50a, -4px -3px 11px #deff57;
+  box-shadow: 4px 3px 13px #cec50a, -4px -3px 11px #deff57;
+  border-color: #fbfbfb;
+  border-width: 1px 0px 0px 1px;
+  border-style: solid;
+  background: #DED50A;
+}
+button.neumorphic.yellow.pressed, .btn.neumorphic.yellow.pressed {
+  box-shadow: inset -3px -3px 8px #deff57, inset 2px 2px 8px #cec50a;
+  border: none;
+}
+button.neumorphic.green, .btn.neumorphic.green {
+  box-shadow: 4px 3px 13px #0d921d, -4px -3px 11px #37c348;
+  border-color: #ffffff36;
+  border-width: 1px 0px 0px 1px;
+  border-style: solid;
+  background: #08AC1C;
+}
+button.neumorphic.green.pressed, .btn.neumorphic.green.pressed {
+  box-shadow: inset -3px -3px 8px #37c348, inset 3px 3px 10px #0d921d;
+  border: none;
+}
+button.neumorphic.white, .btn.neumorphic.white {
+  box-shadow: 2px 2px 8px #e8e8e8, -2px -2px 8px #f5f7ef;
+  border-color: #ffffff36;
+  border-width: 1px 0px 0px 1px;
+  border-style: solid;
+  background: #f5f7ef;
+}
+button.neumorphic.white.pressed, .btn.neumorphic.white.pressed {
+  box-shadow: inset -2px -2px 8px #f5f7ef, inset 2px 2px 8px #e8e8e8;
+  border: none;
 }
 button:focus, .btn:focus {
   outline: none;
@@ -213,7 +249,7 @@ button#top-btn.scale-out, .btn#top-btn.scale-out {
 .card.short {
   min-height: 50vh;
 }
-@media only screen and (min-device-width: 813px) {
+@media only screen and (min-width: 813px) {
   .card {
     height: 100vh;
   }
@@ -221,12 +257,6 @@ button#top-btn.scale-out, .btn#top-btn.scale-out {
     height: 50vh;
     min-height: 50vh;
   }
-}
-.card.about {
-  background: #f5f7ef;
-}
-.card.contact {
-  background: #ffffff;
 }
 .card .footnote {
   position: absolute;
@@ -243,7 +273,7 @@ button#top-btn.scale-out, .btn#top-btn.scale-out {
   font-family: Mono;
 }
 
-@media only screen and (min-device-width: 812px) {
+@media only screen and (min-width: 812px) {
   .half-card {
     width: 50%;
     min-height: 100vh;
@@ -255,7 +285,7 @@ iframe {
   min-height: 50vh;
   border: none;
 }
-@media screen and (min-device-width: 812px) {
+@media screen and (min-width: 812px) {
   iframe {
     min-height: 100vh;
   }
@@ -269,13 +299,27 @@ iframe {
 .container .form {
   margin: 20px auto;
 }
+.container.button-wrapper {
+  display: flex;
+  margin: 50px auto;
+  justify-content: space-between;
+}
+.container.avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0;
+}
+.container.avatar img {
+  padding: 0 0 25px 0;
+}
 
 .portfolio-container {
   width: 100%;
   height: 100%;
   min-height: 50vh;
 }
-@media screen and (min-device-width: 812px) {
+@media screen and (min-width: 812px) {
   .portfolio-container {
     min-height: 100vh;
   }
@@ -285,14 +329,6 @@ iframe {
   display: flex;
   flex-direction: column;
   padding: 15px;
-}
-.text-container.branded {
-  padding-top: 62px;
-}
-@media screen and (min-device-width: 812px) {
-  .text-container.branded {
-    padding-top: 15px;
-  }
 }
 .text-container .underscore {
   width: 20%;
@@ -306,9 +342,11 @@ iframe {
   font-size: 2.5rem;
 }
 .text-container p {
-  font-size: 1.5rem;
+  word-spacing: 1px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-width: 375px) and (max-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   .text-container p {
     font-size: 20px;
   }
@@ -325,7 +363,7 @@ iframe {
   text-shadow: 3px 2px 8px rgba(0, 0, 0, 0.2);
 }
 .text-container .icon-large:visited {
-  color: #B30900;
+  color: #DE140A;
 }
 
 .portfolio-divider {
@@ -378,7 +416,7 @@ iframe {
     font-size: 28px;
   }
 }
-@media screen and (max-device-width: 812px) {
+@media screen and (max-width: 812px) {
   .hide-on-mobile {
     display: none !important;
   }

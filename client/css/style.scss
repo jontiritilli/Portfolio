@@ -29,6 +29,9 @@
 .text-yellow {
   color: $color-yellow-0 !important
 }
+.text-purple {
+  color: $color-purple-0 !important
+}
 .yellow {
   background: $color-yellow-0 !important;
 }
@@ -163,8 +166,6 @@ form {
 
   .flex-outer li button {
     margin-left: auto;
-    border: none;
-    background: $color-purple-0;
     letter-spacing: .09em;
   }
 }
@@ -172,6 +173,7 @@ form {
 a {
   text-decoration: none;
   color: $color-purple-0;
+  cursor: pointer;
 }
 // buttons
 button, .btn {
@@ -182,9 +184,41 @@ button, .btn {
   box-shadow: 2px 2px 8px rgba(0,0,0,.5);
   background: white;
   transition: $transition-speed;
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 4px 4px 12px rgba(0,0,0,.6);
+  &.neumorphic {
+    border-radius: 10px;
+    &.yellow {
+      box-shadow: 4px 3px 13px $button-shadow-yellow-dark, -4px -3px 11px $button-shadow-yellow-light;box-shadow: 4px 3px 13px #cec50a, -4px -3px 11px #deff57;
+      border-color: #fbfbfb;
+      border-width: 1px 0px 0px 1px;
+      border-style: solid;
+      background: $color-yellow-0;
+      &.pressed {
+        box-shadow: inset -3px -3px 8px $button-shadow-yellow-light, inset 2px 2px 8px $button-shadow-yellow-dark;
+        border: none;
+      }
+    }
+    &.green {
+      box-shadow: 4px 3px 13px $button-shadow-green-dark, -4px -3px 11px $button-shadow-green-light;
+      border-color: #ffffff36;
+      border-width: 1px 0px 0px 1px;
+      border-style: solid;
+      background: $color-green-0;
+      &.pressed {
+        box-shadow: inset -3px -3px 8px $button-shadow-green-light, inset 3px 3px 10px $button-shadow-green-dark;
+        border: none;
+      }
+    }
+    &.white {
+      box-shadow: 2px 2px 8px $button-shadow-white-dark, -2px -2px 8px $button-shadow-white-light;
+      border-color: #ffffff36;
+      border-width: 1px 0px 0px 1px;
+      border-style: solid;
+      background: $color-white-1;
+      &.pressed {
+        box-shadow: inset -2px -2px 8px $button-shadow-white-light, inset 2px 2px 8px $button-shadow-white-dark;
+        border: none;
+      }
+    }
   }
   &:focus {
     outline: none;
@@ -214,18 +248,12 @@ button, .btn {
   &.short {
     min-height: $height-card-half;
   }
-  @media only screen and (min-device-width: 813px) {
+  @media only screen and (min-width: 813px) {
     height: $height-card;
     &.short {
       height: $height-card-half;
       min-height: $height-card-half;
     }
-  }
-  &.about {
-    background: $color-white-1;
-  }
-  &.contact {
-    background: $color-white-0;
   }
   .footnote {
     position: absolute;
@@ -241,7 +269,7 @@ button, .btn {
   min-height: $height-card-half;
   font-family: Mono;
 }
-@media only screen and (min-device-width: 812px) {
+@media only screen and (min-width: 812px) {
   .half-card {
     width: 50%;
     min-height: 100vh;
@@ -253,7 +281,7 @@ iframe {
   height: 100%;
   min-height: $height-card-half;
   border: none;
-  @media screen and (min-device-width: 812px) {
+  @media screen and (min-width: 812px) {
     min-height: 100vh;
   }
 }
@@ -265,12 +293,26 @@ iframe {
   .form {
     margin: 20px auto;
   }
+  &.button-wrapper {
+    display: flex;
+    margin: 50px auto;
+    justify-content: space-between;
+  }
+  &.avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+    img {
+      padding: 0 0 25px 0;
+    }
+  }
 }
 .portfolio-container {
   width: 100%;
   height: 100%;
   min-height: $height-card-half;
-  @media screen and (min-device-width: 812px) {
+  @media screen and (min-width: 812px) {
     min-height: 100vh;
   }
 }
@@ -278,12 +320,6 @@ iframe {
   display: flex;
   flex-direction: column;
   padding: 15px;
-  &.branded {
-    padding-top: 62px;
-    @media screen and (min-device-width: 812px) {
-      padding-top: 15px;
-    }
-  }
   .underscore {
     width: 20%;
     height: 0.3rem;
@@ -296,11 +332,13 @@ iframe {
     font-size: 2.5rem;
   }
   p {
-    font-size: 1.5rem;
+    word-spacing: 1px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
   }
   @media only screen and
-  (min-device-width: 375px)
-  and (max-device-width: 812px)
+  (min-width: 375px)
+  and (max-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3) {
     p {
       font-size: 20px;
@@ -317,7 +355,7 @@ iframe {
       text-shadow: 3px 2px 8px $color-text-shadow;
     }
     &:visited {
-      color: $color-red-3
+      color: $color-red-0
     }
   }
 }
@@ -369,7 +407,7 @@ iframe {
 
 // helpers
 .hide-on-mobile {
-  @media screen and (max-device-width: 812px) {
+  @media screen and (max-width: 812px) {
     display: none !important;
   }
 }

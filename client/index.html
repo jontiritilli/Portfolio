@@ -39,32 +39,34 @@
         <h1>I see you found me.</h1>
         <div class="underscore"></div>
         <p>My name is Jon. </p>
-        <p>I"m a Developer and Technical Business Advisor</p>
+        <p>I'm a Developer and Technical Business Advisor</p>
       </div>
     </div>
     <div class="half-card center-align yellow">
-      <a href="#contact">
-        <button class="purple dark">Say Hello.</button>
-      </a>
+      <div class="container avatar">
+        <img src="./assets/images/me_img.jpg" alt="Jonathan picture">
+        <a href="#contact">
+          <button class="neumorphic yellow dark">Say Hello.</button>
+        </a>
+      </div>
     </div>
   </section>
   <section class="card short red right-align">
     <div class="text-container dark">
       <h1>Development and Consulting.</h1>
       <div class="underscore dark"></div>
-      <p>react, vue, wordpress.</p>
-      <p>websites, applications, CMS, and workflow integrations.</p>
+      <p>React, Vue, ASP.Net, Wordpress.</p>
+      <p>SAAS Applications, CMS, and workflow integrations.</p>
     </div>
   </section>
   <section class="card white">
-    <div class="half-card center-align">
-      <img src="./assets/images/me_img.jpg" alt="Jonathan picture">
+    <div class="half-card hide-on-mobile">
     </div>
     <div class="half-card">
       <div class="text-container">
         <h1>About Me.</h1>
         <div class="underscore"></div>
-        <p>My name is Jonathan Tiritilli and I am a Web Developer. During my time developing I have worked on a variety of projects. I've worked on everything from enterprise level CMS deployment and site migrations (think 12k+ pages), to brochure-ware and front-end development for some of the GOF (think Microsoft). Our teams were often small, but our tasks were not, and this has always required me to obtain a diverse skill-set, and to do it quickly. I'm excited to show the world what I can do.</p>
+        <p>My name is Jonathan Tiritilli and I am a Web Developer. During my time developing I have worked on a variety of projects from enterprise level CMS deployment and site migrations (think 12k+ pages), to brochure-ware and front-end development for some of the GOF (think Microsoft), and full-stack web applications. Our teams were often small, but our tasks were not, and this has always required me to obtain a diverse skill-set, and to do it quickly. I'm excited to show the world what I can do.</p>
       </div>
     </div>
   </section>
@@ -91,7 +93,7 @@
               <textarea rows="6" id="message" name="message" placeholder="Enter your message here"></textarea>
             </li>
             <li>
-              <button class="send-control dark" type="submit">Send</button>
+              <button class="btn neumorphic green dark" type="submit">Send</button>
             </li>
           </ul>
         </form>
@@ -112,10 +114,13 @@
     <div class="text-container">
       <h1>See my work.</h1>
       <div class="underscore"></div>
-      <p>Down here <i class="fas fa-chevron-down"></i></p>
+      <p>
+        Down here&nbsp;
+        <a href="#portfolio" class="text-black"><i class="fas fa-chevron-down text-purple"></i></a>
+      </p>
     </div>
   </section>
-  <section class="card white">
+  <section id="portfolio" class="card white">
     <div class="half-card yellow">
       <div class="text-container ">
         <h1>Meg Tiritilli Photography.</h1>
@@ -159,30 +164,49 @@
       </div>
     </div>
   </section>
+  <div class="portfolio-divider"></div>
+  <section class="card">
+    <div class="half-card purple">
+      <div class="text-container dark">
+        <h1>Soul Real Yoga.</h1>
+        <div class="underscore dark"></div>
+        <p>See their landing page <a class="text-yellow" href="https://soulrealyoga.com" target="_blank" ref="noopener noreferrer">here</a>.</p>
+      </div>
+    </div>
+    <div class="half-card">
+      <div class="portfolio-container">
+        <iframe src="https://soulrealyoga.com"></iframe>
+      </div>
+    </div>
+  </section>
   <section class="card white relative">
     <div class="text-container">
       <h1>See me other places.</h1>
       <div class="underscore"></div>
-      <div class="container">
-        <a href="https://github.com/jontiritilli" target="_blank" ref="noopener noreferrer" class="icon-large"><i class="fab fa-github-square"></i></a>
-        <a href="https://linkedin.com/in/jontiritilli" target="_blank" ref="noopener noreferrer" class="icon-large"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com/jontiritilli" target="_blank" ref="noopener noreferrer" class="icon-large"><i class="fab fa-twitter-square"></i></a>
+      <div class="container button-wrapper">
+          <a href="https://github.com/jontiritilli" target="_blank" ref="noopener noreferrer">
+            <button class="btn neumorphic white">
+              <i class="fab fa-github-square"></i>
+            </button>
+          </a>
+          <a href="https://linkedin.com/in/jontiritilli" target="_blank" ref="noopener noreferrer">
+            <button class="btn neumorphic white">
+              <i class="fab fa-linkedin"></i>
+            </button>
+          </a>
+          <a href="https://twitter.com/jontiritilli" target="_blank" ref="noopener noreferrer">
+            <button class="btn neumorphic white">
+              <i class="fab fa-twitter-square"></i>
+            </button>
+          </a>
       </div>
     </div>
     <div class="footnote">
-      <p>&copy; Jon Tiritilli - 2019</p>
+      <p>&copy; Jon Tiritilli - 2020</p>
     </div>
   </section>
   <button class="btn dark scale-out" id="top-btn"><i class="fas fa-chevron-up"></i></button>
-  <!-- <div id="vue-app"></div>
-  <script type="x-template" id="weather-app">
-    <div class="weather-pill" v-if="weather">{{ weather }}&#8457;</div>
-  </script> -->
-  <!-- <script src="./js/vue.js"></script> -->
-  <!--  Scripts  -->
   <script src="js/jquery-3.3.1.min.js"></script>
-  <!-- <script src="js/validate.min.js"></script> -->
-  <!-- <script src="js/materialize.min.js"></script> -->
   <script src="js/init.js"></script>
   </body>
 </html>
