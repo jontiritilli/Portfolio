@@ -175,7 +175,8 @@ a {
   cursor: pointer;
 }
 
-button, .btn {
+button,
+.btn {
   border: none;
   cursor: pointer;
   padding: 10px 20px;
@@ -184,47 +185,46 @@ button, .btn {
   background: white;
   transition: 0.1s;
 }
-button.neumorphic, .btn.neumorphic {
+button.neumorphic,
+.btn.neumorphic {
   border-radius: 10px;
 }
-button.neumorphic.yellow, .btn.neumorphic.yellow {
-  box-shadow: 4px 3px 13px #cec50a, -4px -3px 11px #deff57;
-  box-shadow: 4px 3px 13px #cec50a, -4px -3px 11px #deff57;
-  border-color: #ffffff36;
-  border-width: 1px 0px 0px 1px;
-  border-style: solid;
+button.neumorphic.yellow,
+.btn.neumorphic.yellow {
+  box-shadow: 10px 10px 14px #c8c009, -10px -10px 14px #f4ea0b;
   background: #DED50A;
 }
-button.neumorphic.yellow.pressed, .btn.neumorphic.yellow.pressed {
-  box-shadow: inset -3px -3px 8px #deff57, inset 2px 2px 8px #cec50a;
+button.neumorphic.yellow.pressed,
+.btn.neumorphic.yellow.pressed {
+  box-shadow: inset 10px 10px 14px #c8c009, inset -10px -10px 14px #f4ea0b;
   border: none;
 }
-button.neumorphic.green, .btn.neumorphic.green {
-  box-shadow: 4px 3px 13px #0d921d, -4px -3px 11px #37c348;
-  border-color: #ffffff36;
-  border-width: 1px 0px 0px 1px;
-  border-style: solid;
+button.neumorphic.green,
+.btn.neumorphic.green {
+  box-shadow: 10px 10px 14px #079b0f, -10px -10px 14px #09bd13;
   background: #08AC1C;
 }
-button.neumorphic.green.pressed, .btn.neumorphic.green.pressed {
-  box-shadow: inset -3px -3px 8px #37c348, inset 3px 3px 10px #0d921d;
+button.neumorphic.green.pressed,
+.btn.neumorphic.green.pressed {
+  box-shadow: inset 10px 10px 14px #079b0f, inset -10px -10px 14px #09bd13;
   border: none;
 }
-button.neumorphic.white, .btn.neumorphic.white {
-  box-shadow: 2px 2px 8px #e8e8e8, -2px -2px 8px #f5f7ef;
-  border-color: #fbfbfb;
-  border-width: 1px 0px 0px 1px;
-  border-style: solid;
+button.neumorphic.white,
+.btn.neumorphic.white {
+  box-shadow: 10px 10px 14px #e2e2e2, -10px -10px 14px #ffffff;
   background: #f5f7ef;
 }
-button.neumorphic.white.pressed, .btn.neumorphic.white.pressed {
-  box-shadow: inset -2px -2px 8px #f5f7ef, inset 2px 2px 8px #e8e8e8;
+button.neumorphic.white.pressed,
+.btn.neumorphic.white.pressed {
+  box-shadow: inset 7px 7px 15px #e2e2e2, inset -7px -7px 15px #ffffff;
   border: none;
 }
-button:focus, .btn:focus {
+button:focus,
+.btn:focus {
   outline: none;
 }
-button#top-btn, .btn#top-btn {
+button#top-btn,
+.btn#top-btn {
   background: #8A8400;
   position: absolute;
   opacity: 1;
@@ -233,7 +233,8 @@ button#top-btn, .btn#top-btn {
   bottom: 10px;
   transition: 0.1s;
 }
-button#top-btn.scale-out, .btn#top-btn.scale-out {
+button#top-btn.scale-out,
+.btn#top-btn.scale-out {
   transform: scale(0);
   opacity: 0;
 }

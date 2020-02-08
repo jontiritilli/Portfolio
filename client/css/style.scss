@@ -24,13 +24,13 @@
 }
 // colors
 .text-black {
-  color: $color-black-0 !important
+  color: $color-black-0 !important;
 }
 .text-yellow {
-  color: $color-yellow-0 !important
+  color: $color-yellow-0 !important;
 }
 .text-purple {
-  color: $color-purple-0 !important
+  color: $color-purple-0 !important;
 }
 .yellow {
   background: $color-yellow-0 !important;
@@ -69,11 +69,11 @@ html {
 // placeholder
 ::placeholder {
   font-family: Mono;
-  color: $color-white-1
+  color: $color-white-1;
 }
 // remove scrollbar
 ::-webkit-scrollbar {
-  width: 0 !important
+  width: 0 !important;
 }
 
 // brand/logo
@@ -150,7 +150,7 @@ form {
   .flex-outer li label,
   .flex-outer li p {
     padding: 8px;
-    letter-spacing: .09em;
+    letter-spacing: 0.09em;
   }
 
   .flex-outer > li > label,
@@ -166,7 +166,7 @@ form {
 
   .flex-outer li button {
     margin-left: auto;
-    letter-spacing: .09em;
+    letter-spacing: 0.09em;
   }
 }
 // anchors
@@ -176,46 +176,38 @@ a {
   cursor: pointer;
 }
 // buttons
-button, .btn {
+button,
+.btn {
   border: none;
   cursor: pointer;
   padding: 10px 20px;
   font-size: 1.5rem;
-  box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   background: white;
   transition: $transition-speed;
   &.neumorphic {
     border-radius: 10px;
     &.yellow {
-      box-shadow: 4px 3px 13px $button-shadow-yellow-dark, -4px -3px 11px $button-shadow-yellow-light;box-shadow: 4px 3px 13px #cec50a, -4px -3px 11px #deff57;
-      border-color: #ffffff36;
-      border-width: 1px 0px 0px 1px;
-      border-style: solid;
+      box-shadow: 10px 10px 14px #c8c009, -10px -10px 14px #f4ea0b;
       background: $color-yellow-0;
       &.pressed {
-        box-shadow: inset -3px -3px 8px $button-shadow-yellow-light, inset 2px 2px 8px $button-shadow-yellow-dark;
+        box-shadow: inset 10px 10px 14px #c8c009, inset -10px -10px 14px #f4ea0b;
         border: none;
       }
     }
     &.green {
-      box-shadow: 4px 3px 13px $button-shadow-green-dark, -4px -3px 11px $button-shadow-green-light;
-      border-color: #ffffff36;
-      border-width: 1px 0px 0px 1px;
-      border-style: solid;
+      box-shadow: 10px 10px 14px #079b0f, -10px -10px 14px #09bd13;
       background: $color-green-0;
       &.pressed {
-        box-shadow: inset -3px -3px 8px $button-shadow-green-light, inset 3px 3px 10px $button-shadow-green-dark;
+        box-shadow: inset 10px 10px 14px #079b0f, inset -10px -10px 14px #09bd13;
         border: none;
       }
     }
     &.white {
-      box-shadow: 2px 2px 8px $button-shadow-white-dark, -2px -2px 8px $button-shadow-white-light;
-      border-color: #fbfbfb;
-      border-width: 1px 0px 0px 1px;
-      border-style: solid;
+      box-shadow: 10px 10px 14px #e2e2e2, -10px -10px 14px #ffffff;
       background: $color-white-1;
       &.pressed {
-        box-shadow: inset -2px -2px 8px $button-shadow-white-light, inset 2px 2px 8px $button-shadow-white-dark;
+        box-shadow: inset 7px 7px 15px #e2e2e2, inset -7px -7px 15px #ffffff;
         border: none;
       }
     }
@@ -325,7 +317,7 @@ iframe {
     height: 0.3rem;
     background: black;
     &.dark {
-      background: $color-white-0
+      background: $color-white-0;
     }
   }
   h1 {
@@ -336,10 +328,7 @@ iframe {
     font-family: sans-serif;
     letter-spacing: 1px;
   }
-  @media only screen and
-  (min-width: 375px)
-  and (max-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 3) {
+  @media only screen and (min-width: 375px) and (max-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
     p {
       font-size: 20px;
     }
@@ -355,7 +344,7 @@ iframe {
       text-shadow: 3px 2px 8px $color-text-shadow;
     }
     &:visited {
-      color: $color-red-0
+      color: $color-red-0;
     }
   }
 }
@@ -397,11 +386,11 @@ iframe {
   color: white;
   font-weight: bold;
   font-size: 5vw;
-  box-shadow: 1px 2px 6px rgba(0, 0, 0, .5);
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5);
 }
 @media screen and (min-width: 751px) {
   .weather-pill {
-     font-size: 28px;
+    font-size: 28px;
   }
 }
 
