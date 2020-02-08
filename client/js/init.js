@@ -35,7 +35,7 @@ function addClickHandlers() {
   });
 }
 function addTopBtn() {
-  let showPosition = 82;
+  let showPosition = 150;
   let scrollPos = $(document).scrollTop();
   if (scrollPos > showPosition) {
     $("#top-btn").removeClass("scale-out");
@@ -44,11 +44,11 @@ function addTopBtn() {
   }
 }
 function scrollToTop() {
-  $("body").animate(
+  $("html, body").animate(
     {
       scrollTop: $("body").offset().top
     },
-    750
+    500
   );
 }
 function scrollToTarget(target) {
@@ -57,7 +57,7 @@ function scrollToTarget(target) {
       {
         scrollTop: $(target).offset().top
       },
-      750
+      500
     );
   }
 }

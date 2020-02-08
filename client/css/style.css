@@ -224,7 +224,7 @@ button:focus,
 button#top-btn,
 .btn#top-btn {
   background: #8A8400;
-  position: absolute;
+  position: fixed;
   opacity: 1;
   transform: scale(1);
   right: 10px;
