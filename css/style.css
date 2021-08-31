@@ -106,7 +106,7 @@ form .flex-outer,
 form .flex-inner {
   list-style-type: none;
   padding: 0;
-  color: #f5f7ef;
+  color: #000000;
   font-size: 1.4rem;
 }
 form .flex-outer {
@@ -116,12 +116,11 @@ form .flex-outer {
 form .flex-outer li input,
 form .flex-outer li textarea {
   padding: 15px;
-  color: #f5f7ef;
   font-family: Mono;
   font-size: 1.2rem;
   background: none;
   border-style: solid;
-  border-color: #f5f7ef;
+  border-color: #000000;
   border-width: 0 0 3px 0;
 }
 form .flex-outer li input:focus,
@@ -189,7 +188,7 @@ button.neumorphic,
 }
 button.neumorphic.yellow,
 .btn.neumorphic.yellow {
-  box-shadow: 10px 10px 14px #c8c009, -10px -10px 14px #f4ea0b;
+  box-shadow: 6px 6px 14px #c8c009, -10px -10px 14px #f4ea0b;
   background: #DED50A;
 }
 button.neumorphic.yellow.pressed,
@@ -199,7 +198,7 @@ button.neumorphic.yellow.pressed,
 }
 button.neumorphic.green,
 .btn.neumorphic.green {
-  box-shadow: 10px 10px 14px #079b0f, -10px -10px 14px #09bd13;
+  box-shadow: 6px 6px 14px #079b0f, -10px -10px 14px #09bd13;
   background: #08AC1C;
 }
 button.neumorphic.green.pressed,
@@ -209,11 +208,21 @@ button.neumorphic.green.pressed,
 }
 button.neumorphic.white,
 .btn.neumorphic.white {
-  box-shadow: 10px 10px 14px #e2e2e2, -10px -10px 14px #ffffff;
+  box-shadow: 6px 6px 14px #e2e2e2, -6px -6px 14px #fffcfc;
   background: #f5f7ef;
 }
 button.neumorphic.white.pressed,
 .btn.neumorphic.white.pressed {
+  box-shadow: inset 7px 7px 15px #e2e2e2, inset -7px -7px 15px #ffffff;
+  border: none;
+}
+button.neumorphic.purple,
+.btn.neumorphic.purple {
+  box-shadow: 6px 6px 14px #45176d, -6px -6px 14px #6823a2;
+  background: #f5f7ef;
+}
+button.neumorphic.purple.pressed,
+.btn.neumorphic.purple.pressed {
   box-shadow: inset 7px 7px 15px #e2e2e2, inset -7px -7px 15px #ffffff;
   border: none;
 }
@@ -229,7 +238,9 @@ button#top-btn,
   transform: scale(1);
   right: 10px;
   bottom: 10px;
+  border-radius: 6px;
   transition: 0.1s;
+  padding: 5px 15px;
 }
 button#top-btn.scale-out,
 .btn#top-btn.scale-out {
@@ -295,7 +306,9 @@ button#top-btn.scale-out,
   padding: 25px 0;
 }
 .container.avatar img {
-  padding: 0 0 25px 0;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  max-width: 250px;
 }
 
 .portfolio-container {

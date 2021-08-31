@@ -98,7 +98,7 @@ form {
   .flex-inner {
     list-style-type: none;
     padding: 0;
-    color: $color-white-1;
+    color: $color-black-0;
     font-size: 1.4rem;
   }
   .flex-outer {
@@ -107,12 +107,11 @@ form {
     li input,
     li textarea {
       padding: 15px;
-      color: $color-white-1;
       font-family: Mono;
       font-size: 1.2rem;
       background: none;
       border-style: solid;
-      border-color: $color-white-1;
+      border-color: $color-black-0;
       border-width: 0 0 3px 0;
       &:focus {
         outline: none;
@@ -186,7 +185,7 @@ button,
   &.neumorphic {
     border-radius: 10px;
     &.yellow {
-      box-shadow: 10px 10px 14px #c8c009, -10px -10px 14px #f4ea0b;
+      box-shadow: 6px 6px 14px #c8c009, -10px -10px 14px #f4ea0b;
       background: $color-yellow-0;
       &.pressed {
         box-shadow: inset 10px 10px 14px #c8c009, inset -10px -10px 14px #f4ea0b;
@@ -194,7 +193,7 @@ button,
       }
     }
     &.green {
-      box-shadow: 10px 10px 14px #079b0f, -10px -10px 14px #09bd13;
+      box-shadow: 6px 6px 14px #079b0f, -10px -10px 14px #09bd13;
       background: $color-green-0;
       &.pressed {
         box-shadow: inset 10px 10px 14px #079b0f, inset -10px -10px 14px #09bd13;
@@ -202,7 +201,15 @@ button,
       }
     }
     &.white {
-      box-shadow: 10px 10px 14px #e2e2e2, -10px -10px 14px #ffffff;
+      box-shadow: 6px 6px 14px #e2e2e2, -6px -6px 14px #fffcfc;
+      background: $color-white-1;
+      &.pressed {
+        box-shadow: inset 7px 7px 15px #e2e2e2, inset -7px -7px 15px #ffffff;
+        border: none;
+      }
+    }
+    &.purple {
+      box-shadow: 6px 6px 14px #45176d, -6px -6px 14px #6823a2;
       background: $color-white-1;
       &.pressed {
         box-shadow: inset 7px 7px 15px #e2e2e2, inset -7px -7px 15px #ffffff;
@@ -220,7 +227,9 @@ button,
     transform: scale(1);
     right: 10px;
     bottom: 10px;
-    transition: $transition-speed;
+    border-radius: $border-radius;
+    transition: 0.1s;
+    padding: 5px 15px;
     &.scale-out {
       transform: scale(0);
       opacity: 0;
@@ -281,7 +290,9 @@ button,
     align-items: center;
     padding: 25px 0;
     img {
-      padding: 0 0 25px 0;
+      margin-bottom: 25px;
+      border-radius: $border-radius;
+      max-width: 250px;
     }
   }
 }
