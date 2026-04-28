@@ -3,30 +3,35 @@ const services = [
   {
     title: "Engineering",
     body:
-      "Full-stack web applications across C#/.NET, Node, and modern JavaScript frameworks.",
+      "Full-stack work across Java, Node, and modern React frameworks — APIs, services, and the UIs that sit on top.",
+    tone: "clay",
   },
   {
     title: "Consulting",
     body:
       "Best practices, integrations, and process for small teams shipping at enterprise scale.",
+    tone: "cobalt",
   },
   {
     title: "Enhancement",
     body:
       "Untangling legacy systems, optimizing pipelines, and migrating sites without losing the plot.",
+    tone: "mustard",
   },
 ];
 ---
 
-<section class="section section--paper-warm">
+<section class="section" data-stage="yellow">
   <div class="container">
-    <p class="eyebrow">What I do</p>
-    <h2>Engineering and consulting,<br />without the theatre.</h2>
-    <hr class="rule" />
-    <div class="services__grid">
+    <div class="services__heading" data-reveal>
+      <p class="eyebrow">What I do</p>
+      <h2>Engineering and consulting,<br />without the theatre.</h2>
+      <hr class="rule" />
+    </div>
+    <div class="services__grid" data-reveal style="--reveal-offset: 420">
       {
         services.map((s) => (
-          <article class="services__card">
+          <article class:list={["services__card", `services__card--${s.tone}`]}>
             <h3>{s.title}</h3>
             <p>{s.body}</p>
           </article>
@@ -51,16 +56,17 @@ const services = [
   }
 
   .services__card {
-    padding: 1.75rem;
-    background: var(--paper);
-    border: var(--hairline);
+    position: relative;
+    padding: 2rem;
     border-radius: var(--radius-lg);
+    border: 1px solid transparent;
     transition: transform var(--transition), box-shadow var(--transition);
   }
 
   .services__card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-soft);
+    transform: translateY(-3px);
+    box-shadow: 0 2px 4px rgba(14, 14, 16, 0.08),
+      0 14px 28px rgba(14, 14, 16, 0.14);
   }
 
   .services__card h3 {
@@ -70,5 +76,38 @@ const services = [
 
   .services__card p {
     margin: 0;
+  }
+
+  .services__card--clay {
+    background: #c8553d;
+    color: #fff8f4;
+  }
+  .services__card--clay h3 {
+    color: #fff8f4;
+  }
+  .services__card--clay p {
+    color: rgba(255, 248, 244, 0.88);
+  }
+
+  .services__card--cobalt {
+    background: #2d4ef5;
+    color: #ffffff;
+  }
+  .services__card--cobalt h3 {
+    color: #ffffff;
+  }
+  .services__card--cobalt p {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .services__card--mustard {
+    background: #d4a93c;
+    color: #1a1407;
+  }
+  .services__card--mustard h3 {
+    color: #1a1407;
+  }
+  .services__card--mustard p {
+    color: rgba(26, 20, 7, 0.82);
   }
 </style>

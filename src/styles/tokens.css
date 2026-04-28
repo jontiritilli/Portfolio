@@ -41,19 +41,3 @@
   --gutter: clamp(1.25rem, 4vw, 3rem);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --ink: #f4f4f2;
-    --ink-soft: #d8d8d4;
-    --ink-mute: #8a8a92;
-    --rule: #2a2a2f;
-    --paper: #0e0e10;
-    --paper-warm: #131316;
-    --paper-deep: #18181c;
-    --accent: #6e85ff;
-    --accent-hover: #8497ff;
-    --accent-pressed: #4f6cff;
-    --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.5),
-      0 4px 12px rgba(0, 0, 0, 0.4);
-  }
-}
