@@ -1,0 +1,97 @@
+---
+---
+
+<section id="contact" class="section section--ink">
+  <div class="container contact__inner">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2>Say hello.</h2>
+      <hr class="rule" />
+      <p>
+        Drop a line about a role, a project, or a problem you're stuck on. I
+        read everything.
+      </p>
+    </div>
+    <form
+      class="contact__form"
+      action="https://formspree.io/xjvbwdqn"
+      method="POST"
+    >
+      <input type="hidden" name="_next" value="https://jonathantiritilli.com" />
+      <label>
+        <span>Email</span>
+        <input
+          type="email"
+          name="_replyto"
+          required
+          placeholder="you@example.com"
+        />
+      </label>
+      <label>
+        <span>Message</span>
+        <textarea name="message" rows="5" required placeholder="What's on your mind?"></textarea>
+      </label>
+      <button class="btn btn--accent" type="submit">Send message</button>
+    </form>
+  </div>
+</section>
+
+<style>
+  .contact__inner {
+    display: grid;
+    gap: clamp(2.5rem, 6vw, 4.5rem);
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  @media (min-width: 820px) {
+    .contact__inner {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .contact__form {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .contact__form label {
+    display: grid;
+    gap: 0.4rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--paper) 75%, transparent);
+  }
+
+  .contact__form input,
+  .contact__form textarea {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--paper);
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--paper) 40%, transparent);
+    padding: 0.75rem 0;
+    text-transform: none;
+    letter-spacing: 0;
+    transition: border-color var(--transition);
+  }
+
+  .contact__form input:focus,
+  .contact__form textarea:focus {
+    outline: none;
+    border-bottom-color: var(--accent);
+  }
+
+  .contact__form textarea {
+    resize: vertical;
+    min-height: 6rem;
+  }
+
+  .contact__form button {
+    justify-self: start;
+    margin-top: 0.5rem;
+  }
+</style>

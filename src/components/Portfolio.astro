@@ -1,0 +1,98 @@
+---
+const projects = [
+  {
+    title: "Identity IQ",
+    description: "Modern enrollment path for a credit and identity service.",
+    href: "https://enroll.identityiq.com",
+  },
+  {
+    title: "JST Real Estate",
+    description: "Marketing and team site for a boutique real estate firm.",
+    href: "https://jstrealestate.com",
+  },
+  {
+    title: "Monster Hiring",
+    description: "Statically generated employer resources at scale.",
+    href: "https://hiring.monster.com/employer-resources/?intcid=HEADER_resources",
+  },
+  {
+    title: "Deckromancy",
+    description: "A web-based deckbuilder and play space for trading card games.",
+    href: "https://deckromancy.vercel.app/",
+  },
+];
+---
+
+<section id="portfolio" class="section section--paper-deep">
+  <div class="container">
+    <p class="eyebrow">Selected work</p>
+    <h2>Things I've shipped.</h2>
+    <hr class="rule accent" />
+    <ul class="portfolio__grid">
+      {
+        projects.map((p) => (
+          <li>
+            <a class="portfolio__card" href={p.href} target="_blank" rel="noopener noreferrer">
+              <h3>{p.title}</h3>
+              <p>{p.description}</p>
+              <span class="portfolio__cta" aria-hidden="true">Visit →</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .portfolio__grid {
+    list-style: none;
+    padding: 0;
+    margin: 3rem 0 0;
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 720px) {
+    .portfolio__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .portfolio__card {
+    display: block;
+    padding: 2rem;
+    background: var(--paper);
+    border: var(--hairline);
+    border-bottom: 0;
+    border-radius: var(--radius-lg);
+    color: inherit;
+    box-shadow: var(--shadow-soft);
+    transition: transform var(--transition), box-shadow var(--transition);
+    height: 100%;
+  }
+
+  .portfolio__card:hover {
+    transform: translateY(-3px);
+    color: inherit;
+    box-shadow: 0 2px 4px rgba(14, 14, 16, 0.06),
+      0 12px 24px rgba(14, 14, 16, 0.1);
+  }
+
+  .portfolio__card h3 {
+    font-size: var(--step-2);
+    margin-bottom: 0.5rem;
+  }
+
+  .portfolio__card p {
+    margin-bottom: 1.25rem;
+  }
+
+  .portfolio__cta {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+  }
+</style>
