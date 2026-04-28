@@ -1,0 +1,74 @@
+---
+const services = [
+  {
+    title: "Engineering",
+    body:
+      "Full-stack web applications across C#/.NET, Node, and modern JavaScript frameworks.",
+  },
+  {
+    title: "Consulting",
+    body:
+      "Best practices, integrations, and process for small teams shipping at enterprise scale.",
+  },
+  {
+    title: "Enhancement",
+    body:
+      "Untangling legacy systems, optimizing pipelines, and migrating sites without losing the plot.",
+  },
+];
+---
+
+<section class="section section--paper-warm">
+  <div class="container">
+    <p class="eyebrow">What I do</p>
+    <h2>Engineering and consulting,<br />without the theatre.</h2>
+    <hr class="rule" />
+    <div class="services__grid">
+      {
+        services.map((s) => (
+          <article class="services__card">
+            <h3>{s.title}</h3>
+            <p>{s.body}</p>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .services__grid {
+    display: grid;
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+  }
+
+  @media (min-width: 720px) {
+    .services__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .services__card {
+    padding: 1.75rem;
+    background: var(--paper);
+    border: var(--hairline);
+    border-radius: var(--radius-lg);
+    transition: transform var(--transition), box-shadow var(--transition);
+  }
+
+  .services__card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .services__card h3 {
+    font-size: var(--step-1);
+    margin-bottom: 0.75rem;
+  }
+
+  .services__card p {
+    margin: 0;
+  }
+</style>

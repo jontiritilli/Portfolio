@@ -1,0 +1,270 @@
+@import "./tokens.css";
+
+@font-face {
+  font-family: "bebas";
+  src: url("/assets/fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  transition: color var(--transition), border-color var(--transition);
+}
+
+a:hover {
+  color: var(--accent-hover);
+  border-bottom-color: var(--accent-hover);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.05;
+  margin: 0 0 0.4em;
+  color: var(--ink);
+}
+
+h1 {
+  font-size: var(--step-4);
+}
+
+h2 {
+  font-size: var(--step-3);
+}
+
+h3 {
+  font-size: var(--step-2);
+}
+
+p {
+  margin: 0 0 1em;
+  max-width: 60ch;
+  color: var(--ink-soft);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin: 0 0 1.25rem;
+}
+
+.rule {
+  width: 3rem;
+  height: 2px;
+  background: var(--ink);
+  border: 0;
+  margin: 0 0 1.5rem;
+}
+
+.rule.accent {
+  background: var(--accent);
+}
+
+.section {
+  padding: clamp(4rem, 10vh, 8rem) var(--gutter);
+  border-bottom: 1px solid var(--rule);
+}
+
+.section.tight {
+  padding-block: clamp(3rem, 6vh, 5rem);
+}
+
+.section--paper-warm {
+  background: var(--paper-warm);
+}
+
+.section--paper-deep {
+  background: var(--paper-deep);
+}
+
+.section--ink {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.section--ink h1,
+.section--ink h2,
+.section--ink h3 {
+  color: var(--paper);
+}
+
+.section--ink p {
+  color: color-mix(in srgb, var(--paper) 75%, transparent);
+}
+
+.section--ink .rule {
+  background: var(--paper);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--content-width);
+  margin-inline: auto;
+}
+
+.grid-2 {
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 720px) {
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+/* Refined neumorphic / tactile button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--radius-md);
+  border: var(--hairline);
+  background: var(--paper-warm);
+  color: var(--ink);
+  cursor: pointer;
+  box-shadow: var(--shadow-soft);
+  transition: transform var(--transition), box-shadow var(--transition),
+    background var(--transition), color var(--transition);
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--paper);
+  transform: translateY(-1px);
+  border-bottom-color: color-mix(in srgb, var(--ink) 12%, transparent);
+}
+
+.btn:active,
+.btn.is-pressed {
+  transform: translateY(1px);
+  box-shadow: var(--shadow-press);
+  background: var(--paper-deep);
+}
+
+.btn--primary {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+.btn--primary:hover {
+  background: var(--ink-soft);
+  color: var(--paper);
+}
+
+.btn--accent {
+  background: var(--accent);
+  color: #fff;
+  border-color: transparent;
+}
+
+.btn--accent:hover {
+  background: var(--accent-hover);
+  color: #fff;
+}
+
+.btn--accent:active,
+.btn--accent.is-pressed {
+  background: var(--accent-pressed);
+}
+
+.btn--icon {
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.btn--icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+#top-btn {
+  position: fixed;
+  right: clamp(1rem, 3vw, 2rem);
+  bottom: clamp(1rem, 3vw, 2rem);
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border-radius: 50%;
+  z-index: 10;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity var(--transition), transform var(--transition),
+    background var(--transition);
+}
+
+#top-btn.is-hidden {
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+}
+
+#top-btn svg {
+  width: 1rem;
+  height: 1rem;
+}
