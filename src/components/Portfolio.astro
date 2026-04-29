@@ -93,7 +93,8 @@ const projects = [
   }
 
   .portfolio__card {
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 2rem;
     background: #fdfcfa;
     border: 1px solid rgba(14, 14, 16, 0.08);
@@ -123,6 +124,7 @@ const projects = [
   }
 
   .portfolio__cta {
+    margin-top: auto;
     font-family: var(--font-mono);
     font-size: 0.85rem;
     letter-spacing: 0.06em;
