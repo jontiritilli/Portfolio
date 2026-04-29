@@ -4,14 +4,46 @@ import "../styles/global.css";
 interface Props {
   title?: string;
   description?: string;
+  ogImage?: string;
 }
 
 const {
-  title = "Tiritilli Web Development",
-  description = "Software engineer and technical advisor — selected work, contact, and links.",
+  title = "Jonathan Tiritilli — Quietly shipping the future.",
+  description = "Principal Engineer at Domo. Building enterprise software, AI tooling, ETL pipelines, and ontology / graph systems for business intelligence.",
+  ogImage = "/og-image.png",
 } = Astro.props;
 
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
+const ogImageUrl = new URL(ogImage, Astro.site).toString();
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Jonathan Tiritilli",
+  url: "https://jonathantiritilli.com",
+  jobTitle: "Principal Engineer",
+  worksFor: {
+    "@type": "Organization",
+    name: "Domo",
+    url: "https://www.domo.com",
+  },
+  sameAs: [
+    "https://github.com/jontiritilli",
+    "https://linkedin.com/in/jontiritilli",
+    "https://twitter.com/jontiritilli",
+  ],
+  knowsAbout: [
+    "Software Engineering",
+    "Business Intelligence",
+    "ETL",
+    "Ontology",
+    "Graph Databases",
+    "AI Tooling",
+    "Java",
+    "Node.js",
+    "React",
+  ],
+};
 ---
 
 <!doctype html>
@@ -21,12 +53,33 @@ const canonical = new URL(Astro.url.pathname, Astro.site).toString();
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="author" content="Jonathan Tiritilli" />
+    <meta name="theme-color" content="#1f1d1b" />
     <link rel="canonical" href={canonical} />
+
+    <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:type" content="website" />
-    <link rel="icon" href="/assets/images/favicon.png" />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Jonathan Tiritilli" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@jontiritilli" />
+    <meta name="twitter:creator" content="@jontiritilli" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+    <link rel="apple-touch-icon" href="/assets/images/favicon.png" />
+
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(personSchema)}
+    />
+
     <title>{title}</title>
   </head>
   <body>
