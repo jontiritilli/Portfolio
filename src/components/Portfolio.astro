@@ -1,6 +1,30 @@
 ---
 const projects = [
   {
+    title: "Domo Developer Portal",
+    description:
+      "Documentation and onboarding for building custom apps on the Domo platform.",
+    href: "https://domo.com/docs/portal/Getting-Started/overview",
+  },
+  {
+    title: "Domo Apps SDK",
+    description:
+      "JavaScript SDK powering custom apps and AI tooling on the Domo platform.",
+    href: "https://www.npmjs.com/package/@domoinc/da",
+  },
+  {
+    title: "Ryuu CLI",
+    description:
+      "CLI for developing, previewing, and publishing Domo Custom Apps.",
+    href: "https://www.npmjs.com/package/ryuu",
+  },
+  {
+    title: "Domo Publish Action",
+    description:
+      "GitHub Action for publishing Domo Custom Apps from CI pipelines.",
+    href: "https://github.com/marketplace/actions/domo-publish-action",
+  },
+  {
     title: "Identity IQ",
     description: "Modern enrollment path for a credit and identity service.",
     href: "https://enroll.identityiq.com",
@@ -59,6 +83,12 @@ const projects = [
   @media (min-width: 720px) {
     .portfolio__grid {
       grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .portfolio__grid {
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 
