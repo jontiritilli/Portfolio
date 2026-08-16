@@ -99,7 +99,7 @@ Bucket and distribution IDs may still be stubbed (`REPLACE_WITH_*`) until the us
 
 ## Third-party integrations
 
-- Contact form posts to Formspree endpoint `xjvbwdqn` (hardcoded in `Contact.astro`) with `_next` redirect back to `https://jonathantiritilli.com`. Update both if the production domain changes.
+- Contact form posts to Formspree endpoint `xjvbwdqn` (hardcoded in `Contact.astro`) with `_next` redirect back to `https://www.jonathantiritilli.com`. Update both if the production domain changes.
 - No analytics is wired up; the legacy Google Analytics snippet was removed during the Astro migration.
 
 ## Outstanding TODOs

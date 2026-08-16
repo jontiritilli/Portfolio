@@ -1,6 +1,6 @@
 # Portfolio
 
-Personal portfolio for [jonathantiritilli.com](https://jonathantiritilli.com) — built with [Astro](https://astro.build), deployed to S3 + CloudFront.
+Personal portfolio for [www.jonathantiritilli.com](https://www.jonathantiritilli.com) — built with [Astro](https://astro.build), deployed to S3 + CloudFront.
 
 ## Develop
 
